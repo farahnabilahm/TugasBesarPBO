@@ -103,11 +103,39 @@ public class Aplikasi {
 			case 1:
                             Dokter d = new Dokter();
                             addDokter(d);
-				break;
+                            System.out.println("Masukkan Nama : "+d.getNama());
+                            System.out.println("Masukkan Umur : "+d.getUmur());
+                            System.out.println("Masukkan Alamat : "+d.getAlamat());
+                            System.out.println("Masukkan Jenis Kelamin : "+d.getjenisKelamin());
+                            System.out.println("Masukkan NIP : "+d.getNip());
+                            System.out.println("Masukkan Bidang Spesialis : "+d.getSpesialis());
+                            
+                            System.out.println("Nama : "+d.getNama());
+                            System.out.println("Umur : "+d.getUmur());
+                            System.out.println("Alamat : "+d.getAlamat());
+                            System.out.println("Jenis Kelamin : "+d.getjenisKelamin());
+                            System.out.println("NIP : "+d.getNip());
+                            System.out.println("Bidang Spesialis : "+d.getSpesialis());
+                            
+                            
+                            break;
 			case 2:
                             Pasien p = new Pasien();
-				addPasien(p);
-				break;
+                            addPasien(p);
+                            System.out.println("Masukkan Nama : "+p.getNama());
+                            System.out.println("Masukkan Umur : "+p.getUmur());
+                            System.out.println("Masukkan Alamat : "+p.getAlamat());
+                            System.out.println("Masukkan Jenis Kelamin : "+p.getjenisKelamin());
+                            System.out.println("Masukkan No Registrasi : "+p.getNoRegistrasi());
+                            System.out.println("Masukkan Jenis Penyakit : "+p.getJenisPenyakit());
+                            
+                            System.out.println("Nama : "+p.getNama());
+                            System.out.println("Umur : "+p.getUmur());
+                            System.out.println("Alamat : "+p.getAlamat());
+                            System.out.println("Jenis Kelamin : "+p.getjenisKelamin());
+                            System.out.println("No Registrasi : "+p.getNoRegistrasi());
+                            System.out.println("Jenis Penyakit : "+p.getJenisPenyakit());
+                            break;
 			case 3:
 				deleteDokter(d);
 				break;
