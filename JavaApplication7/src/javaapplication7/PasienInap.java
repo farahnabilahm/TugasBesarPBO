@@ -16,7 +16,7 @@ public class PasienInap {
     private int nDiagnosa;
     boolean status;
 	
-    public PasienInap(Pasien p){
+    public PasienInap(Pasien p, Dokter d){
 	diagnosa = new String[10];
         this.pasien = p;
     }

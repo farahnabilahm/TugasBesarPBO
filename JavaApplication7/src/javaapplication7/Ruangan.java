@@ -20,13 +20,8 @@ public class Ruangan {
     }
 	
     public void tambahPasienInap(Pasien p, Dokter d){
-	for(int i=0;i<10;i++){
-            if(daftarPasien[i].status){
-		daftarPasien[i].setPasien(p);
-		daftarPasien[i].setDokter(d);
-		status = false;
-            }
-            break;
-	}
+	int i = 0;
+        daftarPasien[i] = new PasienInap(p,d);
+        i++;
     }
 }
