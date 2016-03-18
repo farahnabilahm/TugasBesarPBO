@@ -24,12 +24,24 @@ public class PasienInap {
     public void setDokter(Dokter d){
 	this.dokter = d;
     }
+    
+    public Dokter getDokter(){
+        return dokter;
+    }
+    
+    public void setPasien(Pasien p){
+        this.pasien = p;
+    }
+    
+    public Pasien getPasien(){
+        return pasien;
+    }
 	
     public void addDiagnosa(String d){
 	if(nDiagnosa<10){
             diagnosa[nDiagnosa] = d;
 	}else{
-           system.out.println("Diagnosa terlalu banyak!");
+           System.out.println("Diagnosa terlalu banyak!");
         }nDiagnosa++;
     }
 }
