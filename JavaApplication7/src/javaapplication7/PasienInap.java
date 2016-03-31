@@ -5,6 +5,9 @@
  */
 package javaapplication7;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author aldebaranbn
@@ -45,4 +48,13 @@ public class PasienInap {
            System.out.println("Diagnosa terlalu banyak!");
         }
     }
+    
+    public String getDiagnosaByIndex(int index){
+        return diagnosa[index];
+    }
+    
+    public void deleteDiagnosaByIndex(int index){
+        List list = new ArrayList();
+        list.remove(diagnosa[index]);
+    };
 }
