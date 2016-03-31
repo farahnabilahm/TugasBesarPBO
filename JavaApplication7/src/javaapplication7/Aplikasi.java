@@ -9,11 +9,12 @@ package javaapplication7;
  *
  * @author Dell Inspiron 14
  */
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Aplikasi {
-	private Dokter[] daftarDokter;
-	private Pasien[] daftarPasien;
-	private Ruangan[] daftarRuangan;
+	private ArrayList<Dokter> dokter = new ArrayList<>();
+	private ArrayList<Pasien> pasien = new ArrayList<>();
+	private ArrayList<Ruangan> ruangan = new ArrayList<>();
 	final private int maxDokter = 100;
 	private int nDokter = 0;
 	final private int maxPasien = 1000;
@@ -21,7 +22,7 @@ public class Aplikasi {
 	
 	public void addDokter(Dokter d){
 		if (nDokter < maxDokter){
-			daftarDokter[nDokter] = d;
+			dokter.add(d);
 			nDokter++;
 		}
 		else{
@@ -31,7 +32,7 @@ public class Aplikasi {
 	
 	public void addPasien(Pasien p){
 		if (nPasien < maxPasien){
-			daftarPasien[nPasien] = p;
+			pasien.add(p);
 			nPasien++;
 		}
 		else{
@@ -40,52 +41,76 @@ public class Aplikasi {
 	}
 	
 	public Pasien getPasien(int noReg){
-		return daftarPasien[noReg];
+		return pasien.get(noReg);
  	}
 	
-	public void deletePasien(Pasien p){
+	public void deletePasien(int noReg){
 		boolean found = false;
 		for(int i= 0; i<nPasien; i++){
-			if (daftarPasien[i].getNoRegistrasi() == p.getNoRegistrasi()){
+			if (pasien.get(i).getNoRegistrasi() == noReg){
 				found = true;
-				daftarPasien[i] = daftarPasien[nPasien-1];
+				pasien.remove(noReg);
 				nPasien--;
 				break;
 			}
 		}
 	}
 	
-	public void searchPasien(Pasien p){
+	public void searchPasien(int noReg){
 		int index = 0;
 		for (int i=0; i<nPasien; i++){
-			if(daftarPasien[i].getNoRegistrasi() == p.getNoRegistrasi());
+			if(pasien.get(i).getNoRegistrasi() == noReg);
 				index = i;
 		}
 	}
 	
 	public Dokter getDokter(int nip){
-		return daftarDokter[nip];
+		return dokter.get(nip);
 	}
 	
-	public void deleteDokter(Dokter d){
+	public void deleteDokter(int nip){
 		boolean found = false;
 		for(int i= 0; i<nDokter; i++){
-			if (daftarDokter[i].getNip() == d.getNip()){
+			if (dokter.get(i).getNip() == nip){
 				found = true;
-				daftarDokter[i] = daftarDokter[nDokter-1];
+				dokter.remove(nip);
 				nDokter--;
 				break;
 			}
 		}
 	}
 	
-	public void searchDokter(Dokter d){
+	public void searchDokter(int nip){
 		int index = 0;
 		for (int i=0; i<nPasien; i++){
-			if(daftarDokter[i].getNip() == d.getNip());
+			if(dokter.get(i).getNip() == nip);
 				index = i;
 		}
 	}
+        
+        public void viewDokter(Dokter d){
+            for(int i =0; i<nDokter;i++){
+                System.out.println("Nama : "+d.getNama());
+                System.out.println("Umur : "+d.getUmur());
+                System.out.println("Alamat : "+d.getAlamat());
+                System.out.println("Jenis Kelamin : "+d.getjenisKelamin());
+                System.out.println("NIP : "+d.getNip());
+                System.out.println("Bidang Spesialis : "+d.getSpesialis());
+                System.out.println("==========================================\n\n");
+            }
+        }
+        
+        public void viewPasienInap(Pasien p){
+            for(int i =0; i<nPasien;i++){
+                System.out.println("Nama : "+p.getNama());
+                System.out.println("Umur : "+p.getUmur());
+                System.out.println("Alamat : "+p.getAlamat());
+                System.out.println("Jenis Kelamin : "+p.getjenisKelamin());
+                System.out.println("No Registrasi : "+p.getNoRegistrasi());
+                System.out.println("Jenis Penyakit : "+p.getJenisPenyakit());
+            }
+        }
+        
 	public void mainMenu(){
 		System.out.println("Sistem Informasi Data Pasien Inap di Rumah Sakit");
 		System.out.println("================================================");
@@ -110,12 +135,7 @@ public class Aplikasi {
                             System.out.println("Masukkan NIP : "+d.getNip());
                             System.out.println("Masukkan Bidang Spesialis : "+d.getSpesialis());
                             
-                            /*System.out.println("Nama : "+d.getNama());
-                            System.out.println("Umur : "+d.getUmur());
-                            System.out.println("Alamat : "+d.getAlamat());
-                            System.out.println("Jenis Kelamin : "+d.getjenisKelamin());
-                            System.out.println("NIP : "+d.getNip());
-                            System.out.println("Bidang Spesialis : "+d.getSpesialis());*/
+                            /**/
                             
                             
                             break;
@@ -128,16 +148,13 @@ public class Aplikasi {
                             System.out.println("Masukkan Jenis Kelamin : "+p.getjenisKelamin());
                             System.out.println("Masukkan No Registrasi : "+p.getNoRegistrasi());
                             System.out.println("Masukkan Jenis Penyakit : "+p.getJenisPenyakit());
-                            
-                            /*System.out.println("Nama : "+p.getNama());
-                            System.out.println("Umur : "+p.getUmur());
-                            System.out.println("Alamat : "+p.getAlamat());
-                            System.out.println("Jenis Kelamin : "+p.getjenisKelamin());
-                            System.out.println("No Registrasi : "+p.getNoRegistrasi());
-                            System.out.println("Jenis Penyakit : "+p.getJenisPenyakit());*/
+                            System.out.println("Masukkan Diagnosa : "+p.getDiagnosaByIndex())
+                            /**/
                             break;
-			/*case 3:
-				deleteDokter(d);
+			case 3:
+                            System.out.println("Masukkan Nip Dokter yang akan di Hapus : "+d.getNip());
+                            
+				deleteDokter(nip);
 				break;
 			case 4:
 				deletePasien(p);
@@ -148,7 +165,7 @@ public class Aplikasi {
 			case 6:
 				searchPasien(p);
 				break;
-			*/default:
+			default:
 				System.out.println("Pilihan yang Dimasukkan Salah");
 		}
 	}

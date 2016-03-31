@@ -5,12 +5,16 @@
  */
 package javaapplication7;
 
+import java.util.ArrayList;
+import java.util.ArrayList;
+
 /**
  *
  * @author aldebaranbn
  */
+
 public class Ruangan {
-    private PasienInap[] daftarPasien;
+    private ArrayList<PasienInap> pasienInap = new ArrayList<>();
     private int noKamar;
     private boolean status;
 	
@@ -22,15 +26,16 @@ public class Ruangan {
     public void tambahPasienInap(Pasien p, Dokter d){
 	int i = 0;
         daftarPasien[i] = new PasienInap(p,d);
+        pasienInap.add(p)
         i++;
     }
     
     public PasienInap getPasienInapByIndex(int index){
-        return daftarPasien[index];
+        return pasienInap.get(index);
     }
     
-    public PasienInap getPasienInapByPasienId(int NoRegistrasi){
-        return daftarPasien[NoRegistrasi];
+    public PasienInap getPasienInapByPasienId(int noReg){
+        return pasienInap.get(noReg);
     }
     
     public void removePasienInap(){
