@@ -24,4 +24,16 @@ public class Ruangan {
         daftarPasien[i] = new PasienInap(p,d);
         i++;
     }
+    
+    public PasienInap getPasienInapByIndex(int index){
+        return daftarPasien[index];
+    }
+    
+    public PasienInap getPasienInapByPasienId(int NoRegistrasi){
+        return daftarPasien[NoRegistrasi];
+    }
+    
+    public void removePasienInap(){
+        
+    }
 }
