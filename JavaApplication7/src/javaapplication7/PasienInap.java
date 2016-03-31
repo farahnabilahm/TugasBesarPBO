@@ -56,5 +56,5 @@ public class PasienInap {
     public void deleteDiagnosaByIndex(int index){
         List list = new ArrayList();
         list.remove(diagnosa[index]);
-    };
+    }
 }

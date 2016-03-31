@@ -110,12 +110,12 @@ public class Aplikasi {
                             System.out.println("Masukkan NIP : "+d.getNip());
                             System.out.println("Masukkan Bidang Spesialis : "+d.getSpesialis());
                             
-                            System.out.println("Nama : "+d.getNama());
+                            /*System.out.println("Nama : "+d.getNama());
                             System.out.println("Umur : "+d.getUmur());
                             System.out.println("Alamat : "+d.getAlamat());
                             System.out.println("Jenis Kelamin : "+d.getjenisKelamin());
                             System.out.println("NIP : "+d.getNip());
-                            System.out.println("Bidang Spesialis : "+d.getSpesialis());
+                            System.out.println("Bidang Spesialis : "+d.getSpesialis());*/
                             
                             
                             break;
@@ -129,14 +129,14 @@ public class Aplikasi {
                             System.out.println("Masukkan No Registrasi : "+p.getNoRegistrasi());
                             System.out.println("Masukkan Jenis Penyakit : "+p.getJenisPenyakit());
                             
-                            System.out.println("Nama : "+p.getNama());
+                            /*System.out.println("Nama : "+p.getNama());
                             System.out.println("Umur : "+p.getUmur());
                             System.out.println("Alamat : "+p.getAlamat());
                             System.out.println("Jenis Kelamin : "+p.getjenisKelamin());
                             System.out.println("No Registrasi : "+p.getNoRegistrasi());
-                            System.out.println("Jenis Penyakit : "+p.getJenisPenyakit());
+                            System.out.println("Jenis Penyakit : "+p.getJenisPenyakit());*/
                             break;
-			case 3:
+			/*case 3:
 				deleteDokter(d);
 				break;
 			case 4:
@@ -148,7 +148,7 @@ public class Aplikasi {
 			case 6:
 				searchPasien(p);
 				break;
-			default:
+			*/default:
 				System.out.println("Pilihan yang Dimasukkan Salah");
 		}
 	}
