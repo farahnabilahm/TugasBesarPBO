@@ -15,13 +15,15 @@ import java.util.List;
 public class PasienInap {
     private Pasien pasien;
     private Dokter dokter;
-    private String[] diagnosa;
+	private ArrayList<String> diagnosa = new ArrayList<>();
+    //private String[] diagnosa;
     private int nDiagnosa;
     boolean status;
 	
     public PasienInap(Pasien p, Dokter d){
-	diagnosa = new String[10];
+	//diagnosa = new String[10];
         this.pasien = p;
+        this.dokter = d;
     }
 	
     public void setDokter(Dokter d){
@@ -42,7 +44,7 @@ public class PasienInap {
 	
     public void addDiagnosa(String d){
 	if(nDiagnosa<10){
-            diagnosa[nDiagnosa] = d;
+            diagnosa.add(d);
             nDiagnosa++;
 	}else{
            System.out.println("Diagnosa terlalu banyak!");
@@ -50,11 +52,12 @@ public class PasienInap {
     }
     
     public String getDiagnosaByIndex(int index){
-        return diagnosa[index];
+        return diagnosa.get(index);
     }
     
     public void deleteDiagnosaByIndex(int index){
-        List list = new ArrayList();
-        list.remove(diagnosa[index]);
+        //List list = new ArrayList();
+        //list.remove(diagnosa[index]);
+		diagnosa.remove(index);
     }
 }

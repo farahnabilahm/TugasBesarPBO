@@ -9,28 +9,30 @@ package javaapplication7;
  *
  * @author aldebaranbn
  */
+import java.util.ArrayList;
 public class Ruangan {
-    private PasienInap[] daftarPasien;
+private ArrayList<PasienInap> pasienInap = new ArrayList<>();
     private int noKamar;
     private boolean status;
 	
-    public Ruangan(){
-	status = true;
+    /*public Ruangan(){
+	//status = true;
         daftarPasien = new PasienInap[10];
-    }
+    }*/
 	
     public void tambahPasienInap(Pasien p, Dokter d){
 	int i = 0;
-        daftarPasien[i] = new PasienInap(p,d);
+        pasienInap.add(new PasienInap(p,d));
+        //daftarPasien[i] = new PasienInap(p,d);
         i++;
     }
     
     public PasienInap getPasienInapByIndex(int index){
-        return daftarPasien[index];
+        return pasienInap.get(index);
     }
     
-    public PasienInap getPasienInapByPasienId(int NoRegistrasi){
-        return daftarPasien[NoRegistrasi];
+    public PasienInap getPasienInapByPasienId(int noReg){
+        return pasienInap.get(noReg);
     }
     
     public void removePasienInap(){
