@@ -12,8 +12,8 @@ package javaapplication7;
 public class Dokter extends Orang{
 	private String spesialis;
 	private int nip;
-	
-	public void setSpesialis(String spesialis){
+        
+        public void setSpesialis(String spesialis){
 		this.spesialis = spesialis;
 	}
 	

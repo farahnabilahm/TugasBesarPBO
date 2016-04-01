@@ -15,7 +15,7 @@ import java.util.List;
 public class PasienInap {
     private Pasien pasien;
     private Dokter dokter;
-	private ArrayList<String> diagnosa = new ArrayList<>();
+    private ArrayList<String> diagnosa = new ArrayList<>();
     //private String[] diagnosa;
     private int nDiagnosa;
     boolean status;
