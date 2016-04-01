@@ -172,6 +172,7 @@ public class Aplikasi {
                             System.out.println("\n");
                                 for(int i=0; i < nDokter; i++){
                                     System.out.println(" "+(i+1)+". Nama: "+dokter);
+                                    
                                 }
                             mainMenu();
                             break;
