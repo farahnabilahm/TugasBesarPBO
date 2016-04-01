@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package javaapplication7;
-
+import java.io.*;
+import java.util.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,11 +21,13 @@ public class PasienInap {
     private int nDiagnosa;
     boolean status;
 	
-    public PasienInap(Pasien p, Dokter d){
+    public PasienInap(){
 	//diagnosa = new String[10];
-        this.pasien = p;
-        this.dokter = d;
+        this.pasien = pasien;
+        this.dokter = dokter;
     }
+    
+    
 	
     public void setDokter(Dokter d){
 	this.dokter = d;
@@ -58,6 +61,6 @@ public class PasienInap {
     public void deleteDiagnosaByIndex(int index){
         //List list = new ArrayList();
         //list.remove(diagnosa[index]);
-		diagnosa.remove(index);
+	diagnosa.remove(index);
     }
 }

@@ -12,19 +12,21 @@ package javaapplication7;
 import java.util.ArrayList;
 public class Ruangan {
 private ArrayList<PasienInap> pasienInap = new ArrayList<>();
-    private int noKamar;
-    private boolean status;
+private int noKamar;
+private boolean status;
 	
     /*public Ruangan(){
 	//status = true;
         daftarPasien = new PasienInap[10];
     }*/
+    public Ruangan(){
+        this.noKamar = noKamar;
+    }   
+    
 	
     public void tambahPasienInap(Pasien p, Dokter d){
-	int i = 0;
-        pasienInap.add(new PasienInap(p,d));
+        pasienInap.add(new PasienInap());
         //daftarPasien[i] = new PasienInap(p,d);
-        i++;
     }
     
     public PasienInap getPasienInapByIndex(int index){
@@ -35,7 +37,9 @@ private ArrayList<PasienInap> pasienInap = new ArrayList<>();
         return pasienInap.get(noReg);
     }
     
-    public void removePasienInap(){
-        
+    public void removePasienInap(int noKamar){
+    //List list = new ArrayList();
+    //list.remove(pasien(p,d));
+    pasienInap.remove(noKamar);
     }
 }

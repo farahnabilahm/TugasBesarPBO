@@ -9,11 +9,13 @@ package javaapplication7;
  *
  * @author Dell Inspiron 14
  */
+import java.io.*;
+import java.util.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class Aplikasi {
 	private ArrayList<Dokter> dokter = new ArrayList<>();
-	private ArrayList<Pasien> pasien = new ArrayList<>();
+	private ArrayList<PasienInap> pasienInap = new ArrayList<>();
 	private ArrayList<Ruangan> ruangan = new ArrayList<>();
 	final private int maxDokter = 100;
 	private int nDokter = 0;
@@ -30,9 +32,9 @@ public class Aplikasi {
 		}
 	}
 	
-	public void addPasien(Pasien p){
+	public void addPasien(PasienInap p){
 		if (nPasien < maxPasien){
-			pasien.add(p);
+			pasienInap.add(p);
 			nPasien++;
 		}
 		else{
@@ -40,26 +42,26 @@ public class Aplikasi {
 		}
 	}
 	
-	public Pasien getPasien(int noReg){
-		return pasien.get(noReg);
+	public PasienInap getPasien(int noReg){
+		return pasienInap.get(noReg);
  	}
 	
 	public void deletePasien(int noReg){
 		boolean found = false;
 		for(int i= 0; i<nPasien; i++){
-			if (pasien.get(i).getNoRegistrasi() == noReg){
+			if (pasienInap.get(i).getPasien().getNoRegistrasi() == noReg){
 				found = true;
-				pasien.remove(noReg);
+				pasienInap.remove(noReg);
 				nPasien--;
 				break;
 			}
 		}
 	}
 	
-	public Pasien searchPasien(int noReg){
-		Pasien a = null;
-		for (Pasien x : pasien){
-                    if(x.getNoRegistrasi() == noReg);
+	public PasienInap searchPasien(int noReg){
+		PasienInap a = null;
+		for (PasienInap x : pasienInap){
+                    if(x.getPasien().getNoRegistrasi() == noReg);
                         a = x;
 		}
                 return a;
@@ -97,13 +99,13 @@ public class Aplikasi {
 		System.out.println("================================================");
 		System.out.println("Daftar Menu");
 		System.out.println("1. Menambah Dokter ");
-		System.out.println("2. Menambah Pasien ");
+		System.out.println("2. Menambah Pasien Inap");
 		System.out.println("3. Menghapus Dokter");
-		System.out.println("4. Menghapus Pasien");
+		System.out.println("4. Menghapus Pasien Inap");
 		System.out.println("5. Mencari Dokter");
 		System.out.println("6. Mencari Pasien");
                 System.out.println("7. Menampilkan Daftar Dokter");
-                System.out.println("8. Menampilkan Daftar Pasien");
+                System.out.println("8. Menampilkan Daftar Pasien Inap");
 		System.out.println("\n");
 		System.out.println("Masukan Pilihan Anda : ");
 			int n = new Scanner(System.in).nextInt();
@@ -112,51 +114,74 @@ public class Aplikasi {
                         System.out.println("Menambahkan Dokter");
 			System.out.println(" Nama : "); String namad = s.next();
                         System.out.println(" Umur : "); int umurd = s.nextInt();
-                        System.out.println(" Alamat : "); String alamatd = s.next();
                         System.out.println(" Jenis Kelamin : "); String jkd = s.next();
-                        System.out.println(" NIP : "); int nipd = s.nextInt();
+                        System.out.println(" Alamat : "); String alamatd = s.next();
                         System.out.println(" Bidang Spesialis : "); String spesialisd = s.next();
-			Dokter d = new Dokter();
+                        System.out.println(" NIP : "); int nipd = s.nextInt();
+			Dokter d = new Dokter(namad ,umurd, jkd, alamatd, spesialisd, nipd);
                         addDokter(d);
+                        mainMenu();
                             break;
 			case 2:
+                            
+                            Ruangan r = new Ruangan();
                             String nama = null;
                             int nip = 0;
                             String alamat = null;
                             String jk = null;
                             int noReg = 0;
                             String jp = null;
+                            String di = null;
+                            String namadok = null;
                             System.out.println("Menambahkan Pasien Inap");
                             System.out.println(" Nama : "); nama = s.next();
+                            //r.getPasienInapByIndex().setPasien(PasienInap);
                             System.out.println(" Umur : "); nip = s.nextInt();
                             System.out.println(" Alamat : "); alamat = s.next();
                             System.out.println(" Jenis Kelamin : "); jk = s.next();
                             System.out.println(" No Registrasi : "); noReg = s.nextInt();
                             System.out.println(" Jenis Penyakit : "); jp = s.next();
-                            Pasien p = new Pasien();
+                            System.out.println(" Diagnosa Penyakit : "); di = s.next();
+                            System.out.println(" Nama Dokter Pasien : "); namadok = s.next();
+                            PasienInap p = new PasienInap();
                             addPasien(p);
+                            mainMenu();
                             break;
 			case 3:
                             System.out.println("Masukkan NIP Dokter : "); int nipDel = s.nextInt();
                             deleteDokter(nipDel);
-				break;
+                            mainMenu();
+                            break;
 			case 4:
                             System.out.println("Masukkan NoReg Pasien : "); int noRegDel = s.nextInt();
                             deletePasien(noRegDel);
-				break;
+                            mainMenu();
+                            break;
 			case 5:
                             System.out.println("Masukkan NIP Dokter : "); int nipSrch = s.nextInt();
                             searchDokter(nipSrch);
-				break;
+                            mainMenu();
+                            break;
 			case 6:
                             System.out.println("Masukkan NoReg Pasien : "); int noRegSrch = s.nextInt();
 				searchPasien(noRegSrch);
-				break;
+				mainMenu();
+                                break;
                         case 7: 
-                            
+                            System.out.println("Daftar Dokter : ");
+                            System.out.println("\n");
+                                for(int i=0; i < nDokter; i++){
+                                    System.out.println(" "+(i+1)+". Nama: "+dokter);
+                                }
+                            mainMenu();
                             break;
                         case 8:
-                            
+                            System.out.println("Daftar Pasien Inap : ");
+                            System.out.println("\n");
+                                for(int i=0; i < nPasien; i++){
+                                    System.out.println(" "+(i+1)+". Nama: "+pasienInap);
+                                }
+                            mainMenu();
                             break;
 			default:
 				System.out.println("Pilihan yang Dimasukkan Salah");

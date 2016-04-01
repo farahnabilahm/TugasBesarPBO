@@ -13,9 +13,9 @@ public abstract class Orang {
 	private String nama;
 	private int umur;
 	private String jenisKelamin;
-    private String alamat;
+        private String alamat;
 	
-	public Orang(){
+	public Orang(String nama, int umur, String jenisKelamin, String alamat){
 		this.nama = nama;
 		this.umur = umur;
 		this.jenisKelamin = jenisKelamin;

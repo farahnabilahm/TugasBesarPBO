@@ -13,6 +13,12 @@ public class Dokter extends Orang{
 	private String spesialis;
 	private int nip;
         
+        public Dokter (String nama, int umur, String jenisKelamin, String alamat, String spesialis, int nip){
+            super(nama, umur, jenisKelamin, alamat);
+            this.spesialis = spesialis;
+            this.nip = nip;
+        }
+        
         public void setSpesialis(String spesialis){
 		this.spesialis = spesialis;
 	}
