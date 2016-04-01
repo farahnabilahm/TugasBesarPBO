@@ -5,23 +5,32 @@
  */
 package javaapplication7;
 
+import java.util.ArrayList;
+import static java.util.Collections.list;
+import java.util.List;
+
 /**
  *
  * @author aldebaranbn
  */
 public class Ruangan {
-    private PasienInap[] daftarPasien;
+    private PasienInap[] pasien;
     private int noKamar;
     private boolean status;
 	
     public Ruangan(){
 	status = true;
-        daftarPasien = new PasienInap[10];
+        pasien = new PasienInap[10];
     }
 	
     public void tambahPasienInap(Pasien p, Dokter d){
 	int i = 0;
-        daftarPasien[i] = new PasienInap(p,d);
+        pasien[i] = new PasienInap(p,d);
         i++;
+    }
+    
+    public void removePasienInap (Pasien p, Dokter d){
+	List list = new ArrayList();
+        list.remove(pasien(p,d));
     }
 }
