@@ -19,14 +19,18 @@ private boolean status;
 	//status = true;
         daftarPasien = new PasienInap[10];
     }*/
-    public Ruangan(){
+    public Ruangan(int noKamar){
         this.noKamar = noKamar;
     }   
+
+    public ArrayList<PasienInap> getPasienInap() {
+        return pasienInap;
+    }
+    
     
 	
     public void tambahPasienInap(Pasien p, Dokter d){
-        pasienInap.add(new PasienInap());
-        //daftarPasien[i] = new PasienInap(p,d);
+        pasienInap.add(new PasienInap(p,d));
     }
     
     public PasienInap getPasienInapByIndex(int index){
@@ -34,12 +38,15 @@ private boolean status;
     }
     
     public PasienInap getPasienInapByPasienId(int noReg){
-        return pasienInap.get(noReg);
+        for(PasienInap p : pasienInap){
+            if (p.getPasien().getNoRegistrasi() == noReg){
+                return p;
+            }
+        }
+        return null;
     }
     
-    public void removePasienInap(int noKamar){
-    //List list = new ArrayList();
-    //list.remove(pasien(p,d));
-    pasienInap.remove(noKamar);
+    public void removePasienInap(int i){
+        pasienInap.remove(i);
     }
 }

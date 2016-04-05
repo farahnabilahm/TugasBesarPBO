@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class Aplikasi {
 	private ArrayList<Dokter> dokter = new ArrayList<>();
-	private ArrayList<PasienInap> pasienInap = new ArrayList<>();
+
 	private ArrayList<Ruangan> ruangan = new ArrayList<>();
 	final private int maxDokter = 100;
 	private int nDokter = 0;
@@ -92,12 +92,16 @@ public class Aplikasi {
                 return t;
 	}
         
+        public void addRuangan(Ruangan r){
+            ruangan.add(r);
+        }
         
 	public void mainMenu(){
             Scanner s = new Scanner(System.in);
 		System.out.println("Sistem Informasi Data Pasien Inap di Rumah Sakit");
 		System.out.println("================================================");
 		System.out.println("Daftar Menu");
+                System.out.println("0. Menambah Ruangan ");
 		System.out.println("1. Menambah Dokter ");
 		System.out.println("2. Menambah Pasien Inap");
 		System.out.println("3. Menghapus Dokter");
@@ -110,6 +114,11 @@ public class Aplikasi {
 		System.out.println("Masukan Pilihan Anda : ");
 			int n = new Scanner(System.in).nextInt();
 		switch(n){
+                    case 0:
+                        System.out.println("Masukkan No Ruangan : "); int nor = s.nextInt();
+                        addRuangan(new Ruangan(nor));
+                        mainMenu();
+                        break;
 			case 1:
                         System.out.println("Menambahkan Dokter");
 			System.out.println(" Nama : "); String namad = s.next();
@@ -124,27 +133,28 @@ public class Aplikasi {
                             break;
 			case 2:
                             
-                            Ruangan r = new Ruangan();
+                            Ruangan r = ruangan.get(0);
+                            
                             String nama = null;
-                            int nip = 0;
+                            int umur = 0;
                             String alamat = null;
                             String jk = null;
                             int noReg = 0;
                             String jp = null;
                             String di = null;
-                            String namadok = null;
+                            int nip = 0;
                             System.out.println("Menambahkan Pasien Inap");
                             System.out.println(" Nama : "); nama = s.next();
                             //r.getPasienInapByIndex().setPasien(PasienInap);
-                            System.out.println(" Umur : "); nip = s.nextInt();
+                            System.out.println(" Umur : "); umur = s.nextInt();
                             System.out.println(" Alamat : "); alamat = s.next();
                             System.out.println(" Jenis Kelamin : "); jk = s.next();
                             System.out.println(" No Registrasi : "); noReg = s.nextInt();
                             System.out.println(" Jenis Penyakit : "); jp = s.next();
                             System.out.println(" Diagnosa Penyakit : "); di = s.next();
-                            System.out.println(" Nama Dokter Pasien : "); namadok = s.next();
-                            PasienInap p = new PasienInap();
-                            addPasien(p);
+                            System.out.println(" NIP Dokter pasien : "); nip = s.nextInt();
+                            Dokter dok = searchDokter(nip);
+                            r.tambahPasienInap(new Pasien(nama, umur, jk, alamat, di, noReg), dok);
                             mainMenu();
                             break;
 			case 3:
@@ -171,16 +181,19 @@ public class Aplikasi {
                             System.out.println("Daftar Dokter : ");
                             System.out.println("\n");
                                 for(int i=0; i < nDokter; i++){
-                                    System.out.println(" "+(i+1)+". Nama: "+dokter);
-                                    
+                                    System.out.println(" "+(i+1)+". Nama: "+dokter.get(i).getNama());
+                                    System.out.println(" "+(i+1)+". Umur: "+dokter.get(i).getUmur());
+                                    //System.out.println(" ");
                                 }
                             mainMenu();
                             break;
                         case 8:
                             System.out.println("Daftar Pasien Inap : ");
                             System.out.println("\n");
-                                for(int i=0; i < nPasien; i++){
-                                    System.out.println(" "+(i+1)+". Nama: "+pasienInap);
+                                for(int i=0; i < pasienInap.size(); i++){
+                                    System.out.println(" "+(i+1)+". Nama Pasien : "+pasienInap.get(i).getPasien().getNama());
+                                    System.out.println(" "+(i+1)+". Nama Dokter : "+pasienInap.get(i).getDokter().getNama());
+                                    
                                 }
                             mainMenu();
                             break;

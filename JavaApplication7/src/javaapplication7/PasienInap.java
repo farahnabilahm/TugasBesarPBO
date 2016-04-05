@@ -21,10 +21,10 @@ public class PasienInap {
     private int nDiagnosa;
     boolean status;
 	
-    public PasienInap(){
+    public PasienInap(Pasien p, Dokter d){
 	//diagnosa = new String[10];
-        this.pasien = pasien;
-        this.dokter = dokter;
+        this.pasien = p;
+        this.dokter = d;
     }
     
     
