@@ -17,18 +17,14 @@ public class PasienInap {
     private Pasien pasien;
     private Dokter dokter;
     private ArrayList<String> diagnosa = new ArrayList<>();
-    //private String[] diagnosa;
     private int nDiagnosa;
     boolean status;
 	
     public PasienInap(Pasien p, Dokter d){
-	//diagnosa = new String[10];
         this.pasien = p;
         this.dokter = d;
     }
     
-    
-	
     public void setDokter(Dokter d){
 	this.dokter = d;
     }
@@ -59,8 +55,6 @@ public class PasienInap {
     }
     
     public void deleteDiagnosaByIndex(int index){
-        //List list = new ArrayList();
-        //list.remove(diagnosa[index]);
 	diagnosa.remove(index);
     }
 }

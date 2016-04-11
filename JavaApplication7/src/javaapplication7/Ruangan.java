@@ -15,10 +15,6 @@ private ArrayList<PasienInap> pasienInap = new ArrayList<>();
 private int noKamar;
 private boolean status;
 	
-    /*public Ruangan(){
-	//status = true;
-        daftarPasien = new PasienInap[10];
-    }*/
     public Ruangan(int noKamar){
         this.noKamar = noKamar;
     }   
@@ -27,8 +23,6 @@ private boolean status;
         return pasienInap;
     }
     
-    
-	
     public void tambahPasienInap(Pasien p, Dokter d){
         pasienInap.add(new PasienInap(p,d));
     }
