@@ -19,12 +19,19 @@ private boolean status;
         this.noKamar = noKamar;
     }   
 
+    public int getNoKamar() {
+        return noKamar;
+    }
+
     public ArrayList<PasienInap> getPasienInap() {
         return pasienInap;
     }
     
-    public void tambahPasienInap(Pasien p, Dokter d){
-        pasienInap.add(new PasienInap(p,d));
+    public void tambahPasienInap(Pasien p, Dokter d, String diag){
+        PasienInap pa = new PasienInap(p, d);
+        pa.addDiagnosa(diag);
+        pasienInap.add(pa);
+        
     }
     
     public PasienInap getPasienInapByIndex(int index){
