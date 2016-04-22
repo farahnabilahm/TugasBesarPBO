@@ -36,9 +36,9 @@ public class MainMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        Panel = new javax.swing.JPanel();
         MenuUtama = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        SI = new javax.swing.JLabel();
         tambahRuangan = new javax.swing.JToggleButton();
         tambahDokter = new javax.swing.JToggleButton();
         tambahPasienInap = new javax.swing.JToggleButton();
@@ -50,89 +50,89 @@ public class MainMenu extends javax.swing.JFrame {
         viewDokter = new javax.swing.JToggleButton();
         exit = new javax.swing.JToggleButton();
         MenuHapusDokter = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        NIP = new javax.swing.JTextField();
-        hapusDokter1 = new javax.swing.JButton();
-        tutupHapusDokter = new javax.swing.JButton();
+        delDokter = new javax.swing.JLabel();
+        NIP = new javax.swing.JLabel();
+        NIPField = new javax.swing.JTextField();
+        btnHapusDokter = new javax.swing.JButton();
+        btnTutupDokter = new javax.swing.JButton();
         MenuCariDokter = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        NIP1 = new javax.swing.JTextField();
-        CariDokter = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
+        CariDokter = new javax.swing.JLabel();
+        NIPCari = new javax.swing.JLabel();
+        NIPCariField = new javax.swing.JTextField();
+        btnCariDokter = new javax.swing.JButton();
+        DokterDitemukan = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         MenuCariPasienInap = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        nomorRegistrasi = new javax.swing.JTextField();
-        cariPasienInap = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
+        CariPasien = new javax.swing.JLabel();
+        NoRegCari = new javax.swing.JLabel();
+        NoRegCariField = new javax.swing.JTextField();
+        btnCariPasien = new javax.swing.JButton();
+        PasienDitemukan = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         MenuHapusPasien = new javax.swing.JPanel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        nomorRegistrasi1 = new javax.swing.JTextField();
-        hapusPasienInap = new javax.swing.JButton();
-        tutupHapusPasienInap = new javax.swing.JButton();
+        HapusPasien = new javax.swing.JLabel();
+        NoRegHapus = new javax.swing.JLabel();
+        NoRegHapusField = new javax.swing.JTextField();
+        btnHapusPasien = new javax.swing.JButton();
+        btnTutupPasien = new javax.swing.JButton();
         MenuTambahDokter = new javax.swing.JPanel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        NamaDokter = new javax.swing.JTextField();
-        UmurDokter = new javax.swing.JTextField();
-        JenisKelaminDokter = new javax.swing.JTextField();
-        AlamatDokter = new javax.swing.JTextField();
-        BidangSpesialis = new javax.swing.JTextField();
-        NIP2 = new javax.swing.JTextField();
+        TambahDokter = new javax.swing.JLabel();
+        NamaDokter = new javax.swing.JLabel();
+        UmurDokter = new javax.swing.JLabel();
+        JKDokter = new javax.swing.JLabel();
+        AlamatDokter = new javax.swing.JLabel();
+        Spesialis = new javax.swing.JLabel();
+        NIPDokter = new javax.swing.JLabel();
+        NamaDokterField = new javax.swing.JTextField();
+        UmurDokterField = new javax.swing.JTextField();
+        JKDokterField = new javax.swing.JTextField();
+        AlamatDokterField = new javax.swing.JTextField();
+        SpesialisField = new javax.swing.JTextField();
+        NIPDokterField = new javax.swing.JTextField();
         simpanDokter = new javax.swing.JButton();
         tutupTambahDokter = new javax.swing.JButton();
         MenuTambahPasienInap = new javax.swing.JPanel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        namaPasien = new javax.swing.JTextField();
-        umurPasien = new javax.swing.JTextField();
-        alamatPasien = new javax.swing.JTextField();
-        jenisKelaminPasien = new javax.swing.JTextField();
-        nomorRegistrasi2 = new javax.swing.JTextField();
-        diagnosa = new javax.swing.JTextField();
-        NIP3 = new javax.swing.JTextField();
-        simpanPasienInap = new javax.swing.JButton();
-        tutupTambahPasienInap = new javax.swing.JButton();
+        TambahPasien = new javax.swing.JLabel();
+        NamaPasien = new javax.swing.JLabel();
+        UmurPasien = new javax.swing.JLabel();
+        AlamatPasien = new javax.swing.JLabel();
+        JKPasien = new javax.swing.JLabel();
+        NoReg = new javax.swing.JLabel();
+        Diagnosa = new javax.swing.JLabel();
+        NIPDokterPasien = new javax.swing.JLabel();
+        namaPasienField = new javax.swing.JTextField();
+        umurPasienField = new javax.swing.JTextField();
+        alamatPasienField = new javax.swing.JTextField();
+        JKPasienField = new javax.swing.JTextField();
+        noRegField = new javax.swing.JTextField();
+        diagnosaField = new javax.swing.JTextField();
+        NIPDokterPasienField = new javax.swing.JTextField();
+        btnSimpanPasien = new javax.swing.JButton();
+        btnTutupTambahPasien = new javax.swing.JButton();
         MenuTambahRuangan = new javax.swing.JPanel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        NoRuangan = new javax.swing.JTextField();
-        SimpanRuangan = new javax.swing.JButton();
-        TutupTambahRuangan = new javax.swing.JButton();
+        TambahRuangan = new javax.swing.JLabel();
+        NoRuangan = new javax.swing.JLabel();
+        NoRuanganField = new javax.swing.JTextField();
+        btnSimpanRuangan = new javax.swing.JButton();
+        btnTutupTambahRuangan = new javax.swing.JButton();
         MenuViewDaftarDokter = new javax.swing.JPanel();
-        jLabel29 = new javax.swing.JLabel();
+        DaftarDokter = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable3 = new javax.swing.JTable();
         MenuViewDaftarPasienInap = new javax.swing.JPanel();
-        jLabel30 = new javax.swing.JLabel();
+        DaftarPasien = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTable4 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setLayout(new java.awt.CardLayout());
+        Panel.setLayout(new java.awt.CardLayout());
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Sistem Informasi Pasien Rawat Inap");
+        SI.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        SI.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SI.setText("Sistem Informasi Pasien Rawat Inap");
 
         tambahRuangan.setText("Tambah Ruangan");
         tambahRuangan.addActionListener(new java.awt.event.ActionListener() {
@@ -187,7 +187,7 @@ public class MainMenu extends javax.swing.JFrame {
                 .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(MenuUtamaLayout.createSequentialGroup()
                         .addGap(19, 19, 19)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(SI, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(MenuUtamaLayout.createSequentialGroup()
                         .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(MenuUtamaLayout.createSequentialGroup()
@@ -214,7 +214,7 @@ public class MainMenu extends javax.swing.JFrame {
             MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MenuUtamaLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(SI, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(tambahRuangan)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -238,17 +238,17 @@ public class MainMenu extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(MenuUtama, "card2");
+        Panel.add(MenuUtama, "card2");
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Hapus Dokter");
+        delDokter.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        delDokter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        delDokter.setText("Hapus Dokter");
 
-        jLabel2.setText("Masukkan NIP Dokter");
+        NIP.setText("Masukkan NIP Dokter");
 
-        hapusDokter1.setText("Hapus");
+        btnHapusDokter.setText("Hapus");
 
-        tutupHapusDokter.setText("Tutup");
+        btnTutupDokter.setText("Tutup");
 
         javax.swing.GroupLayout MenuHapusDokterLayout = new javax.swing.GroupLayout(MenuHapusDokter);
         MenuHapusDokter.setLayout(MenuHapusDokterLayout);
@@ -258,47 +258,47 @@ public class MainMenu extends javax.swing.JFrame {
                 .addGroup(MenuHapusDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(MenuHapusDokterLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel2)
+                        .addComponent(NIP)
                         .addGap(18, 18, 18)
-                        .addComponent(NIP, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(NIPField, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(MenuHapusDokterLayout.createSequentialGroup()
                         .addGap(67, 67, 67)
-                        .addComponent(hapusDokter1)
+                        .addComponent(btnHapusDokter)
                         .addGap(55, 55, 55)
-                        .addComponent(tutupHapusDokter)))
+                        .addComponent(btnTutupDokter)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuHapusDokterLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addComponent(delDokter)
                 .addGap(88, 88, 88))
         );
         MenuHapusDokterLayout.setVerticalGroup(
             MenuHapusDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MenuHapusDokterLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(delDokter)
                 .addGap(18, 18, 18)
                 .addGroup(MenuHapusDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(NIP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(NIP)
+                    .addComponent(NIPField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addGroup(MenuHapusDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hapusDokter1)
-                    .addComponent(tutupHapusDokter))
+                    .addComponent(btnHapusDokter)
+                    .addComponent(btnTutupDokter))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(MenuHapusDokter, "card3");
+        Panel.add(MenuHapusDokter, "card3");
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Cari Dokter");
+        CariDokter.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        CariDokter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CariDokter.setText("Cari Dokter");
 
-        jLabel5.setText("Masukkan NIP Dokter");
+        NIPCari.setText("Masukkan NIP Dokter");
 
-        CariDokter.setText("Cari");
+        btnCariDokter.setText("Cari");
 
-        jLabel6.setText("Data Dokter");
+        DokterDitemukan.setText("Data Dokter");
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -320,47 +320,47 @@ public class MainMenu extends javax.swing.JFrame {
                     .addGroup(MenuCariDokterLayout.createSequentialGroup()
                         .addGap(22, 22, 22)
                         .addGroup(MenuCariDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6)
+                            .addComponent(DokterDitemukan)
                             .addGroup(MenuCariDokterLayout.createSequentialGroup()
-                                .addComponent(jLabel5)
+                                .addComponent(NIPCari)
                                 .addGap(18, 18, 18)
-                                .addComponent(NIP1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(NIPCariField, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(32, 32, 32)
-                                .addComponent(CariDokter))
+                                .addComponent(btnCariDokter))
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(MenuCariDokterLayout.createSequentialGroup()
                         .addGap(185, 185, 185)
-                        .addComponent(jLabel3)))
+                        .addComponent(CariDokter)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         MenuCariDokterLayout.setVerticalGroup(
             MenuCariDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MenuCariDokterLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3)
+                .addComponent(CariDokter)
                 .addGap(18, 18, 18)
                 .addGroup(MenuCariDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(NIP1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CariDokter))
+                    .addComponent(NIPCari)
+                    .addComponent(NIPCariField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCariDokter))
                 .addGap(27, 27, 27)
-                .addComponent(jLabel6)
+                .addComponent(DokterDitemukan)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(MenuCariDokter, "card4");
+        Panel.add(MenuCariDokter, "card4");
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Cari Pasien Inap");
+        CariPasien.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        CariPasien.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CariPasien.setText("Cari Pasien Inap");
 
-        jLabel8.setText("Masukkan No. Registrasi Pasien");
+        NoRegCari.setText("Masukkan No. Registrasi Pasien");
 
-        cariPasienInap.setText("Cari");
+        btnCariPasien.setText("Cari");
 
-        jLabel9.setText("Data Pasien Inap");
+        PasienDitemukan.setText("Data Pasien Inap");
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -383,52 +383,63 @@ public class MainMenu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(MenuCariPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(MenuCariPasienInapLayout.createSequentialGroup()
-                        .addComponent(jLabel8)
+                        .addComponent(NoRegCari)
                         .addGap(18, 18, 18)
-                        .addComponent(nomorRegistrasi, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(NoRegCariField, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(cariPasienInap))
-                    .addComponent(jLabel9)
+                        .addComponent(btnCariPasien))
+                    .addComponent(PasienDitemukan)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 452, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(18, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuCariPasienInapLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel7)
+                .addComponent(CariPasien)
                 .addGap(153, 153, 153))
         );
         MenuCariPasienInapLayout.setVerticalGroup(
             MenuCariPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MenuCariPasienInapLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel7)
+                .addComponent(CariPasien)
                 .addGap(18, 18, 18)
                 .addGroup(MenuCariPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(nomorRegistrasi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cariPasienInap))
+                    .addComponent(NoRegCari)
+                    .addComponent(NoRegCariField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCariPasien))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel9)
+                .addComponent(PasienDitemukan)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(29, Short.MAX_VALUE))
         );
 
-        jPanel1.add(MenuCariPasienInap, "card5");
+        Panel.add(MenuCariPasienInap, "card5");
 
-        jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("Hapus Pasien Inap");
+        HapusPasien.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        HapusPasien.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HapusPasien.setText("Hapus Pasien Inap");
 
-        jLabel11.setText("Masukkan No. Registrasi pasien");
+        NoRegHapus.setText("Masukkan No. Registrasi pasien");
 
-        hapusPasienInap.setText("Hapus");
-        hapusPasienInap.addActionListener(new java.awt.event.ActionListener() {
+        NoRegHapusField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hapusPasienInapActionPerformed(evt);
+                NoRegHapusFieldActionPerformed(evt);
             }
         });
 
-        tutupHapusPasienInap.setText("Tutup");
+        btnHapusPasien.setText("Hapus");
+        btnHapusPasien.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHapusPasienActionPerformed(evt);
+            }
+        });
+
+        btnTutupPasien.setText("Tutup");
+        btnTutupPasien.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTutupPasienActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout MenuHapusPasienLayout = new javax.swing.GroupLayout(MenuHapusPasien);
         MenuHapusPasien.setLayout(MenuHapusPasienLayout);
@@ -438,64 +449,64 @@ public class MainMenu extends javax.swing.JFrame {
                 .addGroup(MenuHapusPasienLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(MenuHapusPasienLayout.createSequentialGroup()
                         .addGap(105, 105, 105)
-                        .addComponent(jLabel10))
+                        .addComponent(HapusPasien))
                     .addGroup(MenuHapusPasienLayout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(MenuHapusPasienLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(hapusPasienInap)
-                            .addComponent(jLabel11))
+                            .addComponent(btnHapusPasien)
+                            .addComponent(NoRegHapus))
                         .addGroup(MenuHapusPasienLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(MenuHapusPasienLayout.createSequentialGroup()
                                 .addGap(18, 18, 18)
-                                .addComponent(nomorRegistrasi1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(NoRegHapusField, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(MenuHapusPasienLayout.createSequentialGroup()
                                 .addGap(67, 67, 67)
-                                .addComponent(tutupHapusPasienInap)))))
+                                .addComponent(btnTutupPasien)))))
                 .addContainerGap(24, Short.MAX_VALUE))
         );
         MenuHapusPasienLayout.setVerticalGroup(
             MenuHapusPasienLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MenuHapusPasienLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel10)
+                .addComponent(HapusPasien)
                 .addGap(18, 18, 18)
                 .addGroup(MenuHapusPasienLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(nomorRegistrasi1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(NoRegHapus)
+                    .addComponent(NoRegHapusField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(MenuHapusPasienLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hapusPasienInap)
-                    .addComponent(tutupHapusPasienInap))
+                    .addComponent(btnHapusPasien)
+                    .addComponent(btnTutupPasien))
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
-        jPanel1.add(MenuHapusPasien, "card6");
+        Panel.add(MenuHapusPasien, "card6");
 
-        jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("Tambah Dokter");
+        TambahDokter.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        TambahDokter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        TambahDokter.setText("Tambah Dokter");
 
-        jLabel13.setText("Nama");
+        NamaDokter.setText("Nama");
 
-        jLabel14.setText("Umur");
+        UmurDokter.setText("Umur");
 
-        jLabel15.setText("Jenis kelamin");
+        JKDokter.setText("Jenis kelamin");
 
-        jLabel16.setText("Alamat");
+        AlamatDokter.setText("Alamat");
 
-        jLabel17.setText("Bidang spesialis");
+        Spesialis.setText("Bidang spesialis");
 
-        jLabel18.setText("NIP");
+        NIPDokter.setText("NIP");
 
-        NamaDokter.addActionListener(new java.awt.event.ActionListener() {
+        NamaDokterField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NamaDokterActionPerformed(evt);
+                NamaDokterFieldActionPerformed(evt);
             }
         });
 
-        NIP2.addActionListener(new java.awt.event.ActionListener() {
+        NIPDokterField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NIP2ActionPerformed(evt);
+                NIPDokterFieldActionPerformed(evt);
             }
         });
 
@@ -512,37 +523,37 @@ public class MainMenu extends javax.swing.JFrame {
                 .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(MenuTambahDokterLayout.createSequentialGroup()
                         .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel13))
+                            .addComponent(UmurDokter)
+                            .addComponent(NamaDokter))
                         .addGap(69, 69, 69)
-                        .addComponent(NamaDokter, javax.swing.GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE))
+                        .addComponent(NamaDokterField, javax.swing.GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE))
                     .addGroup(MenuTambahDokterLayout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(MenuTambahDokterLayout.createSequentialGroup()
                                 .addGap(94, 94, 94)
-                                .addComponent(UmurDokter))
+                                .addComponent(UmurDokterField))
                             .addGroup(MenuTambahDokterLayout.createSequentialGroup()
                                 .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel15)
-                                    .addComponent(jLabel16)
-                                    .addComponent(jLabel17)
-                                    .addComponent(jLabel18))
+                                    .addComponent(JKDokter)
+                                    .addComponent(AlamatDokter)
+                                    .addComponent(Spesialis)
+                                    .addComponent(NIPDokter))
                                 .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(MenuTambahDokterLayout.createSequentialGroup()
                                         .addGap(20, 20, 20)
                                         .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(JenisKelaminDokter)
-                                            .addComponent(AlamatDokter)))
+                                            .addComponent(JKDokterField)
+                                            .addComponent(AlamatDokterField)))
                                     .addGroup(MenuTambahDokterLayout.createSequentialGroup()
                                         .addGap(18, 18, 18)
                                         .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(BidangSpesialis)
-                                            .addComponent(NIP2))))))))
+                                            .addComponent(SpesialisField)
+                                            .addComponent(NIPDokterField))))))))
                 .addGap(29, 29, 29))
             .addGroup(MenuTambahDokterLayout.createSequentialGroup()
                 .addGap(202, 202, 202)
-                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(TambahDokter, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(MenuTambahDokterLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -555,31 +566,31 @@ public class MainMenu extends javax.swing.JFrame {
             MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MenuTambahDokterLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(TambahDokter, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13)
-                    .addComponent(NamaDokter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(NamaDokter)
+                    .addComponent(NamaDokterField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel14)
-                    .addComponent(UmurDokter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(UmurDokter)
+                    .addComponent(UmurDokterField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(JenisKelaminDokter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel15))
+                    .addComponent(JKDokterField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JKDokter))
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16)
-                    .addComponent(AlamatDokter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AlamatDokter)
+                    .addComponent(AlamatDokterField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel17)
-                    .addComponent(BidangSpesialis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Spesialis)
+                    .addComponent(SpesialisField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel18)
-                    .addComponent(NIP2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(NIPDokter)
+                    .addComponent(NIPDokterField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(simpanDokter)
@@ -587,52 +598,52 @@ public class MainMenu extends javax.swing.JFrame {
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        jPanel1.add(MenuTambahDokter, "card7");
+        Panel.add(MenuTambahDokter, "card7");
 
-        jLabel19.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel19.setText("Tambah Pasien Inap");
+        TambahPasien.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        TambahPasien.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        TambahPasien.setText("Tambah Pasien Inap");
 
-        jLabel20.setText("Nama");
+        NamaPasien.setText("Nama");
 
-        jLabel21.setText("Umur");
+        UmurPasien.setText("Umur");
 
-        jLabel22.setText("Alamat");
+        AlamatPasien.setText("Alamat");
 
-        jLabel23.setText("Jenis kelamin");
+        JKPasien.setText("Jenis kelamin");
 
-        jLabel24.setText("Nomor registrasi");
+        NoReg.setText("Nomor registrasi");
 
-        jLabel25.setText("Diagnosa penyakit");
+        Diagnosa.setText("Diagnosa penyakit");
 
-        jLabel26.setText("NIP dokter pasien");
+        NIPDokterPasien.setText("NIP dokter pasien");
 
-        namaPasien.addActionListener(new java.awt.event.ActionListener() {
+        namaPasienField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                namaPasienActionPerformed(evt);
+                namaPasienFieldActionPerformed(evt);
             }
         });
 
-        jenisKelaminPasien.addActionListener(new java.awt.event.ActionListener() {
+        JKPasienField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jenisKelaminPasienActionPerformed(evt);
+                JKPasienFieldActionPerformed(evt);
             }
         });
 
-        NIP3.addActionListener(new java.awt.event.ActionListener() {
+        NIPDokterPasienField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NIP3ActionPerformed(evt);
+                NIPDokterPasienFieldActionPerformed(evt);
             }
         });
 
-        simpanPasienInap.setText("Simpan");
-        simpanPasienInap.addActionListener(new java.awt.event.ActionListener() {
+        btnSimpanPasien.setText("Simpan");
+        btnSimpanPasien.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                simpanPasienInapActionPerformed(evt);
+                btnSimpanPasienActionPerformed(evt);
             }
         });
 
-        tutupTambahPasienInap.setText("Tutup");
+        btnTutupTambahPasien.setText("Tutup");
 
         javax.swing.GroupLayout MenuTambahPasienInapLayout = new javax.swing.GroupLayout(MenuTambahPasienInap);
         MenuTambahPasienInap.setLayout(MenuTambahPasienInapLayout);
@@ -642,95 +653,95 @@ public class MainMenu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(MenuTambahPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(MenuTambahPasienInapLayout.createSequentialGroup()
-                        .addComponent(jLabel25)
+                        .addComponent(Diagnosa)
                         .addGap(7, 7, 7)
-                        .addComponent(diagnosa))
+                        .addComponent(diagnosaField))
                     .addGroup(MenuTambahPasienInapLayout.createSequentialGroup()
-                        .addComponent(jLabel24)
+                        .addComponent(NoReg)
                         .addGap(18, 18, 18)
-                        .addComponent(nomorRegistrasi2))
+                        .addComponent(noRegField))
                     .addGroup(MenuTambahPasienInapLayout.createSequentialGroup()
-                        .addComponent(jLabel23)
+                        .addComponent(JKPasien)
                         .addGap(34, 34, 34)
-                        .addComponent(jenisKelaminPasien))
+                        .addComponent(JKPasienField))
                     .addGroup(MenuTambahPasienInapLayout.createSequentialGroup()
                         .addGroup(MenuTambahPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel22)
-                            .addComponent(jLabel20))
+                            .addComponent(UmurPasien, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AlamatPasien)
+                            .addComponent(NamaPasien))
                         .addGap(62, 62, 62)
                         .addGroup(MenuTambahPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(namaPasien)
-                            .addComponent(alamatPasien, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(umurPasien, javax.swing.GroupLayout.Alignment.LEADING)))
+                            .addComponent(namaPasienField)
+                            .addComponent(alamatPasienField, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(umurPasienField, javax.swing.GroupLayout.Alignment.LEADING)))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, MenuTambahPasienInapLayout.createSequentialGroup()
-                        .addComponent(jLabel26)
+                        .addComponent(NIPDokterPasien)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(MenuTambahPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(NIP3)
+                            .addComponent(NIPDokterPasienField)
                             .addGroup(MenuTambahPasienInapLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
-                                .addComponent(simpanPasienInap)
+                                .addComponent(btnSimpanPasien)
                                 .addGap(84, 84, 84)
-                                .addComponent(tutupTambahPasienInap)
+                                .addComponent(btnTutupTambahPasien)
                                 .addGap(115, 115, 115)))))
                 .addGap(58, 58, 58))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuTambahPasienInapLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel19)
+                .addComponent(TambahPasien)
                 .addGap(180, 180, 180))
         );
         MenuTambahPasienInapLayout.setVerticalGroup(
             MenuTambahPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MenuTambahPasienInapLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(TambahPasien, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel20)
-                    .addComponent(namaPasien, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(NamaPasien)
+                    .addComponent(namaPasienField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(umurPasien, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel21))
+                    .addComponent(umurPasienField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(UmurPasien))
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel22)
-                    .addComponent(alamatPasien, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AlamatPasien)
+                    .addComponent(alamatPasienField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel23)
-                    .addComponent(jenisKelaminPasien, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(JKPasien)
+                    .addComponent(JKPasienField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, Short.MAX_VALUE)
                 .addGroup(MenuTambahPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel24)
-                    .addComponent(nomorRegistrasi2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(NoReg)
+                    .addComponent(noRegField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel25)
-                    .addComponent(diagnosa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Diagnosa)
+                    .addComponent(diagnosaField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel26)
-                    .addComponent(NIP3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(NIPDokterPasien)
+                    .addComponent(NIPDokterPasienField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(simpanPasienInap)
-                    .addComponent(tutupTambahPasienInap))
+                    .addComponent(btnSimpanPasien)
+                    .addComponent(btnTutupTambahPasien))
                 .addGap(45, 45, 45))
         );
 
-        jPanel1.add(MenuTambahPasienInap, "card8");
+        Panel.add(MenuTambahPasienInap, "card8");
 
-        jLabel27.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel27.setText("Tambah Ruangan");
+        TambahRuangan.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        TambahRuangan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        TambahRuangan.setText("Tambah Ruangan");
 
-        jLabel28.setText("Masukkan nomor ruangan");
+        NoRuangan.setText("Masukkan nomor ruangan");
 
-        SimpanRuangan.setText("Simpan");
+        btnSimpanRuangan.setText("Simpan");
 
-        TutupTambahRuangan.setText("Tutup");
+        btnTutupTambahRuangan.setText("Tutup");
 
         javax.swing.GroupLayout MenuTambahRuanganLayout = new javax.swing.GroupLayout(MenuTambahRuangan);
         MenuTambahRuangan.setLayout(MenuTambahRuanganLayout);
@@ -741,41 +752,41 @@ public class MainMenu extends javax.swing.JFrame {
                     .addGroup(MenuTambahRuanganLayout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(MenuTambahRuanganLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(SimpanRuangan)
-                            .addComponent(jLabel28))
+                            .addComponent(btnSimpanRuangan)
+                            .addComponent(NoRuangan))
                         .addGroup(MenuTambahRuanganLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(MenuTambahRuanganLayout.createSequentialGroup()
                                 .addGap(18, 18, 18)
-                                .addComponent(NoRuangan, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(NoRuanganField, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(MenuTambahRuanganLayout.createSequentialGroup()
                                 .addGap(74, 74, 74)
-                                .addComponent(TutupTambahRuangan))))
+                                .addComponent(btnTutupTambahRuangan))))
                     .addGroup(MenuTambahRuanganLayout.createSequentialGroup()
                         .addGap(84, 84, 84)
-                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(TambahRuangan, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
         MenuTambahRuanganLayout.setVerticalGroup(
             MenuTambahRuanganLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MenuTambahRuanganLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(TambahRuangan, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahRuanganLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NoRuangan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(NoRuangan, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NoRuanganField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahRuanganLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SimpanRuangan)
-                    .addComponent(TutupTambahRuangan))
+                    .addComponent(btnSimpanRuangan)
+                    .addComponent(btnTutupTambahRuangan))
                 .addContainerGap(32, Short.MAX_VALUE))
         );
 
-        jPanel1.add(MenuTambahRuangan, "card9");
+        Panel.add(MenuTambahRuangan, "card9");
 
-        jLabel29.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel29.setText("Daftar Dokter");
+        DaftarDokter.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        DaftarDokter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DaftarDokter.setText("Daftar Dokter");
 
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -797,24 +808,24 @@ public class MainMenu extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuViewDaftarDokterLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel29)
+                .addComponent(DaftarDokter)
                 .addGap(211, 211, 211))
         );
         MenuViewDaftarDokterLayout.setVerticalGroup(
             MenuViewDaftarDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MenuViewDaftarDokterLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel29)
+                .addComponent(DaftarDokter)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(MenuViewDaftarDokter, "card10");
+        Panel.add(MenuViewDaftarDokter, "card10");
 
-        jLabel30.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel30.setText("Daftar Pasien Inap");
+        DaftarPasien.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        DaftarPasien.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DaftarPasien.setText("Daftar Pasien Inap");
 
         jTable4.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -834,7 +845,7 @@ public class MainMenu extends javax.swing.JFrame {
                 .addGroup(MenuViewDaftarPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(MenuViewDaftarPasienInapLayout.createSequentialGroup()
                         .addGap(108, 108, 108)
-                        .addComponent(jLabel30))
+                        .addComponent(DaftarPasien))
                     .addGroup(MenuViewDaftarPasienInapLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -844,13 +855,13 @@ public class MainMenu extends javax.swing.JFrame {
             MenuViewDaftarPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MenuViewDaftarPasienInapLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel30)
+                .addComponent(DaftarPasien)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
-        jPanel1.add(MenuViewDaftarPasienInap, "card11");
+        Panel.add(MenuViewDaftarPasienInap, "card11");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -858,13 +869,13 @@ public class MainMenu extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 569, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(Panel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 241, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(Panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -890,33 +901,41 @@ public class MainMenu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_exitActionPerformed
 
-    private void hapusPasienInapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusPasienInapActionPerformed
+    private void btnHapusPasienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusPasienActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hapusPasienInapActionPerformed
+    }//GEN-LAST:event_btnHapusPasienActionPerformed
 
-    private void NamaDokterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NamaDokterActionPerformed
+    private void NamaDokterFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NamaDokterFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NamaDokterActionPerformed
+    }//GEN-LAST:event_NamaDokterFieldActionPerformed
 
-    private void NIP2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NIP2ActionPerformed
+    private void NIPDokterFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NIPDokterFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NIP2ActionPerformed
+    }//GEN-LAST:event_NIPDokterFieldActionPerformed
 
-    private void namaPasienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namaPasienActionPerformed
+    private void namaPasienFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namaPasienFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_namaPasienActionPerformed
+    }//GEN-LAST:event_namaPasienFieldActionPerformed
 
-    private void jenisKelaminPasienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jenisKelaminPasienActionPerformed
+    private void JKPasienFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JKPasienFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jenisKelaminPasienActionPerformed
+    }//GEN-LAST:event_JKPasienFieldActionPerformed
 
-    private void NIP3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NIP3ActionPerformed
+    private void NIPDokterPasienFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NIPDokterPasienFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NIP3ActionPerformed
+    }//GEN-LAST:event_NIPDokterPasienFieldActionPerformed
 
-    private void simpanPasienInapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanPasienInapActionPerformed
+    private void btnSimpanPasienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimpanPasienActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_simpanPasienInapActionPerformed
+    }//GEN-LAST:event_btnSimpanPasienActionPerformed
+
+    private void NoRegHapusFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NoRegHapusFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NoRegHapusFieldActionPerformed
+
+    private void btnTutupPasienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTutupPasienActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnTutupPasienActionPerformed
 
     /**
      * @param args the command line arguments
@@ -955,35 +974,35 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     public JTextField getAlamatDokter() {
-        return AlamatDokter;
+        return AlamatDokterField;
     }
 
     public void setAlamatDokter(JTextField AlamatDokter) {
-        this.AlamatDokter = AlamatDokter;
+        this.AlamatDokterField = AlamatDokter;
     }
 
     public JTextField getBidangSpesialis() {
-        return BidangSpesialis;
+        return SpesialisField;
     }
 
     public void setBidangSpesialis(JTextField BidangSpesialis) {
-        this.BidangSpesialis = BidangSpesialis;
+        this.SpesialisField = BidangSpesialis;
     }
 
     public JButton getCariDokter() {
-        return CariDokter;
+        return btnCariDokter;
     }
 
     public void setCariDokter(JButton CariDokter) {
-        this.CariDokter = CariDokter;
+        this.btnCariDokter = CariDokter;
     }
 
     public JTextField getJenisKelaminDokter() {
-        return JenisKelaminDokter;
+        return JKDokterField;
     }
 
     public void setJenisKelaminDokter(JTextField JenisKelaminDokter) {
-        this.JenisKelaminDokter = JenisKelaminDokter;
+        this.JKDokterField = JenisKelaminDokter;
     }
 
     public JPanel getMenuCariDokter() {
@@ -1067,83 +1086,83 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     public JTextField getNIP() {
-        return NIP;
+        return NIPField;
     }
 
     public void setNIP(JTextField NIP) {
-        this.NIP = NIP;
+        this.NIPField = NIP;
     }
 
     public JTextField getNIP1() {
-        return NIP1;
+        return NIPCariField;
     }
 
     public void setNIP1(JTextField NIP1) {
-        this.NIP1 = NIP1;
+        this.NIPCariField = NIP1;
     }
 
     public JTextField getNIP2() {
-        return NIP2;
+        return NIPDokterField;
     }
 
     public void setNIP2(JTextField NIP2) {
-        this.NIP2 = NIP2;
+        this.NIPDokterField = NIP2;
     }
 
     public JTextField getNIP3() {
-        return NIP3;
+        return NIPDokterPasienField;
     }
 
     public void setNIP3(JTextField NIP3) {
-        this.NIP3 = NIP3;
+        this.NIPDokterPasienField = NIP3;
     }
 
     public JTextField getNamaDokter() {
-        return NamaDokter;
+        return NamaDokterField;
     }
 
     public void setNamaDokter(JTextField NamaDokter) {
-        this.NamaDokter = NamaDokter;
+        this.NamaDokterField = NamaDokter;
     }
 
     public JTextField getNoRuangan() {
-        return NoRuangan;
+        return NoRuanganField;
     }
 
     public void setNoRuangan(JTextField NoRuangan) {
-        this.NoRuangan = NoRuangan;
+        this.NoRuanganField = NoRuangan;
     }
 
     public JButton getSimpanRuangan() {
-        return SimpanRuangan;
+        return btnSimpanRuangan;
     }
 
     public void setSimpanRuangan(JButton SimpanRuangan) {
-        this.SimpanRuangan = SimpanRuangan;
+        this.btnSimpanRuangan = SimpanRuangan;
     }
 
     public JButton getTutupTambahRuangan() {
-        return TutupTambahRuangan;
+        return btnTutupTambahRuangan;
     }
 
     public void setTutupTambahRuangan(JButton TutupTambahRuangan) {
-        this.TutupTambahRuangan = TutupTambahRuangan;
+        this.btnTutupTambahRuangan = TutupTambahRuangan;
     }
 
     public JTextField getUmurDokter() {
-        return UmurDokter;
+        return UmurDokterField;
     }
 
     public void setUmurDokter(JTextField UmurDokter) {
-        this.UmurDokter = UmurDokter;
+        this.UmurDokterField = UmurDokter;
     }
 
     public JTextField getAlamatPasien() {
-        return alamatPasien;
+        return alamatPasienField;
     }
 
     public void setAlamatPasien(JTextField alamatPasien) {
-        this.alamatPasien = alamatPasien;
+        this.alamatPasienField = alamatPasien;
     }
 
     //public JToggleButton getCariDokter() {
@@ -1163,19 +1182,19 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     public JButton getCariPasienInap() {
-        return cariPasienInap;
+        return btnCariPasien;
     }
 
     public void setCariPasienInap(JButton cariPasienInap) {
-        this.cariPasienInap = cariPasienInap;
+        this.btnCariPasien = cariPasienInap;
     }
 
     public JTextField getDiagnosa() {
-        return diagnosa;
+        return diagnosaField;
     }
 
     public void setDiagnosa(JTextField diagnosa) {
-        this.diagnosa = diagnosa;
+        this.diagnosaField = diagnosa;
     }
 
     public JToggleButton getExit() {
@@ -1195,11 +1214,11 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     public JButton getHapusDokter1() {
-        return hapusDokter1;
+        return btnHapusDokter;
     }
 
     public void setHapusDokter1(JButton hapusDokter1) {
-        this.hapusDokter1 = hapusDokter1;
+        this.btnHapusDokter = hapusDokter1;
     }
 
     public JToggleButton getHapusPasien() {
@@ -1211,259 +1230,259 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     public JButton getHapusPasienInap() {
-        return hapusPasienInap;
+        return btnHapusPasien;
     }
 
     public void setHapusPasienInap(JButton hapusPasienInap) {
-        this.hapusPasienInap = hapusPasienInap;
+        this.btnHapusPasien = hapusPasienInap;
     }
 
     public JLabel getjLabel1() {
-        return jLabel1;
+        return delDokter;
     }
 
     public void setjLabel1(JLabel jLabel1) {
-        this.jLabel1 = jLabel1;
+        this.delDokter = jLabel1;
     }
 
     public JLabel getjLabel10() {
-        return jLabel10;
+        return HapusPasien;
     }
 
     public void setjLabel10(JLabel jLabel10) {
-        this.jLabel10 = jLabel10;
+        this.HapusPasien = jLabel10;
     }
 
     public JLabel getjLabel11() {
-        return jLabel11;
+        return NoRegHapus;
     }
 
     public void setjLabel11(JLabel jLabel11) {
-        this.jLabel11 = jLabel11;
+        this.NoRegHapus = jLabel11;
     }
 
     public JLabel getjLabel12() {
-        return jLabel12;
+        return TambahDokter;
     }
 
     public void setjLabel12(JLabel jLabel12) {
-        this.jLabel12 = jLabel12;
+        this.TambahDokter = jLabel12;
     }
 
     public JLabel getjLabel13() {
-        return jLabel13;
+        return NamaDokter;
     }
 
     public void setjLabel13(JLabel jLabel13) {
-        this.jLabel13 = jLabel13;
+        this.NamaDokter = jLabel13;
     }
 
     public JLabel getjLabel14() {
-        return jLabel14;
+        return UmurDokter;
     }
 
     public void setjLabel14(JLabel jLabel14) {
-        this.jLabel14 = jLabel14;
+        this.UmurDokter = jLabel14;
     }
 
     public JLabel getjLabel15() {
-        return jLabel15;
+        return JKDokter;
     }
 
     public void setjLabel15(JLabel jLabel15) {
-        this.jLabel15 = jLabel15;
+        this.JKDokter = jLabel15;
     }
 
     public JLabel getjLabel16() {
-        return jLabel16;
+        return AlamatDokter;
     }
 
     public void setjLabel16(JLabel jLabel16) {
-        this.jLabel16 = jLabel16;
+        this.AlamatDokter = jLabel16;
     }
 
     public JLabel getjLabel17() {
-        return jLabel17;
+        return Spesialis;
     }
 
     public void setjLabel17(JLabel jLabel17) {
-        this.jLabel17 = jLabel17;
+        this.Spesialis = jLabel17;
     }
 
     public JLabel getjLabel18() {
-        return jLabel18;
+        return NIPDokter;
     }
 
     public void setjLabel18(JLabel jLabel18) {
-        this.jLabel18 = jLabel18;
+        this.NIPDokter = jLabel18;
     }
 
     public JLabel getjLabel19() {
-        return jLabel19;
+        return TambahPasien;
     }
 
     public void setjLabel19(JLabel jLabel19) {
-        this.jLabel19 = jLabel19;
+        this.TambahPasien = jLabel19;
     }
 
     public JLabel getjLabel2() {
-        return jLabel2;
+        return NIP;
     }
 
     public void setjLabel2(JLabel jLabel2) {
-        this.jLabel2 = jLabel2;
+        this.NIP = jLabel2;
     }
 
     public JLabel getjLabel20() {
-        return jLabel20;
+        return NamaPasien;
     }
 
     public void setjLabel20(JLabel jLabel20) {
-        this.jLabel20 = jLabel20;
+        this.NamaPasien = jLabel20;
     }
 
     public JLabel getjLabel21() {
-        return jLabel21;
+        return UmurPasien;
     }
 
     public void setjLabel21(JLabel jLabel21) {
-        this.jLabel21 = jLabel21;
+        this.UmurPasien = jLabel21;
     }
 
     public JLabel getjLabel22() {
-        return jLabel22;
+        return AlamatPasien;
     }
 
     public void setjLabel22(JLabel jLabel22) {
-        this.jLabel22 = jLabel22;
+        this.AlamatPasien = jLabel22;
     }
 
     public JLabel getjLabel23() {
-        return jLabel23;
+        return JKPasien;
     }
 
     public void setjLabel23(JLabel jLabel23) {
-        this.jLabel23 = jLabel23;
+        this.JKPasien = jLabel23;
     }
 
     public JLabel getjLabel24() {
-        return jLabel24;
+        return NoReg;
     }
 
     public void setjLabel24(JLabel jLabel24) {
-        this.jLabel24 = jLabel24;
+        this.NoReg = jLabel24;
     }
 
     public JLabel getjLabel25() {
-        return jLabel25;
+        return Diagnosa;
     }
 
     public void setjLabel25(JLabel jLabel25) {
-        this.jLabel25 = jLabel25;
+        this.Diagnosa = jLabel25;
     }
 
     public JLabel getjLabel26() {
-        return jLabel26;
+        return NIPDokterPasien;
     }
 
     public void setjLabel26(JLabel jLabel26) {
-        this.jLabel26 = jLabel26;
+        this.NIPDokterPasien = jLabel26;
     }
 
     public JLabel getjLabel27() {
-        return jLabel27;
+        return TambahRuangan;
     }
 
     public void setjLabel27(JLabel jLabel27) {
-        this.jLabel27 = jLabel27;
+        this.TambahRuangan = jLabel27;
     }
 
     public JLabel getjLabel28() {
-        return jLabel28;
+        return NoRuangan;
     }
 
     public void setjLabel28(JLabel jLabel28) {
-        this.jLabel28 = jLabel28;
+        this.NoRuangan = jLabel28;
     }
 
     public JLabel getjLabel29() {
-        return jLabel29;
+        return DaftarDokter;
     }
 
     public void setjLabel29(JLabel jLabel29) {
-        this.jLabel29 = jLabel29;
+        this.DaftarDokter = jLabel29;
     }
 
     public JLabel getjLabel3() {
-        return jLabel3;
+        return CariDokter;
     }
 
     public void setjLabel3(JLabel jLabel3) {
-        this.jLabel3 = jLabel3;
+        this.CariDokter = jLabel3;
     }
 
     public JLabel getjLabel30() {
-        return jLabel30;
+        return DaftarPasien;
     }
 
     public void setjLabel30(JLabel jLabel30) {
-        this.jLabel30 = jLabel30;
+        this.DaftarPasien = jLabel30;
     }
 
     public JLabel getjLabel4() {
-        return jLabel4;
+        return SI;
     }
 
     public void setjLabel4(JLabel jLabel4) {
-        this.jLabel4 = jLabel4;
+        this.SI = jLabel4;
     }
 
     public JLabel getjLabel5() {
-        return jLabel5;
+        return NIPCari;
     }
 
     public void setjLabel5(JLabel jLabel5) {
-        this.jLabel5 = jLabel5;
+        this.NIPCari = jLabel5;
     }
 
     public JLabel getjLabel6() {
-        return jLabel6;
+        return DokterDitemukan;
     }
 
     public void setjLabel6(JLabel jLabel6) {
-        this.jLabel6 = jLabel6;
+        this.DokterDitemukan = jLabel6;
     }
 
     public JLabel getjLabel7() {
-        return jLabel7;
+        return CariPasien;
     }
 
     public void setjLabel7(JLabel jLabel7) {
-        this.jLabel7 = jLabel7;
+        this.CariPasien = jLabel7;
     }
 
     public JLabel getjLabel8() {
-        return jLabel8;
+        return NoRegCari;
     }
 
     public void setjLabel8(JLabel jLabel8) {
-        this.jLabel8 = jLabel8;
+        this.NoRegCari = jLabel8;
     }
 
     public JLabel getjLabel9() {
-        return jLabel9;
+        return PasienDitemukan;
     }
 
     public void setjLabel9(JLabel jLabel9) {
-        this.jLabel9 = jLabel9;
+        this.PasienDitemukan = jLabel9;
     }
 
     public JPanel getjPanel1() {
-        return jPanel1;
+        return Panel;
     }
 
     public void setjPanel1(JPanel jPanel1) {
-        this.jPanel1 = jPanel1;
+        this.Panel = jPanel1;
     }
 
     public JScrollPane getjScrollPane1() {
@@ -1531,43 +1550,43 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     public JTextField getJenisKelaminPasien() {
-        return jenisKelaminPasien;
+        return JKPasienField;
     }
 
     public void setJenisKelaminPasien(JTextField jenisKelaminPasien) {
-        this.jenisKelaminPasien = jenisKelaminPasien;
+        this.JKPasienField = jenisKelaminPasien;
     }
 
     public JTextField getNamaPasien() {
-        return namaPasien;
+        return namaPasienField;
     }
 
     public void setNamaPasien(JTextField namaPasien) {
-        this.namaPasien = namaPasien;
+        this.namaPasienField = namaPasien;
     }
 
     public JTextField getNomorRegistrasi() {
-        return nomorRegistrasi;
+        return NoRegCariField;
     }
 
     public void setNomorRegistrasi(JTextField nomorRegistrasi) {
-        this.nomorRegistrasi = nomorRegistrasi;
+        this.NoRegCariField = nomorRegistrasi;
     }
 
     public JTextField getNomorRegistrasi1() {
-        return nomorRegistrasi1;
+        return NoRegHapusField;
     }
 
     public void setNomorRegistrasi1(JTextField nomorRegistrasi1) {
-        this.nomorRegistrasi1 = nomorRegistrasi1;
+        this.NoRegHapusField = nomorRegistrasi1;
     }
 
     public JTextField getNomorRegistrasi2() {
-        return nomorRegistrasi2;
+        return noRegField;
     }
 
     public void setNomorRegistrasi2(JTextField nomorRegistrasi2) {
-        this.nomorRegistrasi2 = nomorRegistrasi2;
+        this.noRegField = nomorRegistrasi2;
     }
 
     public JButton getSimpanDokter() {
@@ -1579,11 +1598,11 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     public JButton getSimpanPasienInap() {
-        return simpanPasienInap;
+        return btnSimpanPasien;
     }
 
     public void setSimpanPasienInap(JButton simpanPasienInap) {
-        this.simpanPasienInap = simpanPasienInap;
+        this.btnSimpanPasien = simpanPasienInap;
     }
 
     public JToggleButton getTambahDokter() {
@@ -1611,19 +1630,19 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     public JButton getTutupHapusDokter() {
-        return tutupHapusDokter;
+        return btnTutupDokter;
     }
 
     public void setTutupHapusDokter(JButton tutupHapusDokter) {
-        this.tutupHapusDokter = tutupHapusDokter;
+        this.btnTutupDokter = tutupHapusDokter;
     }
 
     public JButton getTutupHapusPasienInap() {
-        return tutupHapusPasienInap;
+        return btnTutupPasien;
     }
 
     public void setTutupHapusPasienInap(JButton tutupHapusPasienInap) {
-        this.tutupHapusPasienInap = tutupHapusPasienInap;
+        this.btnTutupPasien = tutupHapusPasienInap;
     }
 
     public JButton getTutupTambahDokter() {
@@ -1635,19 +1654,19 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     public JButton getTutupTambahPasienInap() {
-        return tutupTambahPasienInap;
+        return btnTutupTambahPasien;
     }
 
     public void setTutupTambahPasienInap(JButton tutupTambahPasienInap) {
-        this.tutupTambahPasienInap = tutupTambahPasienInap;
+        this.btnTutupTambahPasien = tutupTambahPasienInap;
     }
 
     public JTextField getUmurPasien() {
-        return umurPasien;
+        return umurPasienField;
     }
 
     public void setUmurPasien(JTextField umurPasien) {
-        this.umurPasien = umurPasien;
+        this.umurPasienField = umurPasien;
     }
 
     public JToggleButton getViewDokter() {
@@ -1680,10 +1699,20 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField AlamatDokter;
-    private javax.swing.JTextField BidangSpesialis;
-    private javax.swing.JButton CariDokter;
-    private javax.swing.JTextField JenisKelaminDokter;
+    private javax.swing.JLabel AlamatDokter;
+    private javax.swing.JTextField AlamatDokterField;
+    private javax.swing.JLabel AlamatPasien;
+    private javax.swing.JLabel CariDokter;
+    private javax.swing.JLabel CariPasien;
+    private javax.swing.JLabel DaftarDokter;
+    private javax.swing.JLabel DaftarPasien;
+    private javax.swing.JLabel Diagnosa;
+    private javax.swing.JLabel DokterDitemukan;
+    private javax.swing.JLabel HapusPasien;
+    private javax.swing.JLabel JKDokter;
+    private javax.swing.JTextField JKDokterField;
+    private javax.swing.JLabel JKPasien;
+    private javax.swing.JTextField JKPasienField;
     private javax.swing.JPanel MenuCariDokter;
     private javax.swing.JPanel MenuCariPasienInap;
     private javax.swing.JPanel MenuHapusDokter;
@@ -1694,56 +1723,53 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JPanel MenuUtama;
     private javax.swing.JPanel MenuViewDaftarDokter;
     private javax.swing.JPanel MenuViewDaftarPasienInap;
-    private javax.swing.JTextField NIP;
-    private javax.swing.JTextField NIP1;
-    private javax.swing.JTextField NIP2;
-    private javax.swing.JTextField NIP3;
-    private javax.swing.JTextField NamaDokter;
-    private javax.swing.JTextField NoRuangan;
-    private javax.swing.JButton SimpanRuangan;
-    private javax.swing.JButton TutupTambahRuangan;
-    private javax.swing.JTextField UmurDokter;
-    private javax.swing.JTextField alamatPasien;
+    private javax.swing.JLabel NIP;
+    private javax.swing.JLabel NIPCari;
+    private javax.swing.JTextField NIPCariField;
+    private javax.swing.JLabel NIPDokter;
+    private javax.swing.JTextField NIPDokterField;
+    private javax.swing.JLabel NIPDokterPasien;
+    private javax.swing.JTextField NIPDokterPasienField;
+    private javax.swing.JTextField NIPField;
+    private javax.swing.JLabel NamaDokter;
+    private javax.swing.JTextField NamaDokterField;
+    private javax.swing.JLabel NamaPasien;
+    private javax.swing.JLabel NoReg;
+    private javax.swing.JLabel NoRegCari;
+    private javax.swing.JTextField NoRegCariField;
+    private javax.swing.JLabel NoRegHapus;
+    private javax.swing.JTextField NoRegHapusField;
+    private javax.swing.JLabel NoRuangan;
+    private javax.swing.JTextField NoRuanganField;
+    private javax.swing.JPanel Panel;
+    private javax.swing.JLabel PasienDitemukan;
+    private javax.swing.JLabel SI;
+    private javax.swing.JLabel Spesialis;
+    private javax.swing.JTextField SpesialisField;
+    private javax.swing.JLabel TambahDokter;
+    private javax.swing.JLabel TambahPasien;
+    private javax.swing.JLabel TambahRuangan;
+    private javax.swing.JLabel UmurDokter;
+    private javax.swing.JTextField UmurDokterField;
+    private javax.swing.JLabel UmurPasien;
+    private javax.swing.JTextField alamatPasienField;
+    private javax.swing.JButton btnCariDokter;
+    private javax.swing.JButton btnCariPasien;
+    private javax.swing.JButton btnHapusDokter;
+    private javax.swing.JButton btnHapusPasien;
+    private javax.swing.JButton btnSimpanPasien;
+    private javax.swing.JButton btnSimpanRuangan;
+    private javax.swing.JButton btnTutupDokter;
+    private javax.swing.JButton btnTutupPasien;
+    private javax.swing.JButton btnTutupTambahPasien;
+    private javax.swing.JButton btnTutupTambahRuangan;
     private javax.swing.JToggleButton cariDokter;
     private javax.swing.JToggleButton cariPasien;
-    private javax.swing.JButton cariPasienInap;
-    private javax.swing.JTextField diagnosa;
+    private javax.swing.JLabel delDokter;
+    private javax.swing.JTextField diagnosaField;
     private javax.swing.JToggleButton exit;
     private javax.swing.JToggleButton hapusDokter;
-    private javax.swing.JButton hapusDokter1;
     private javax.swing.JToggleButton hapusPasien;
-    private javax.swing.JButton hapusPasienInap;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -1752,21 +1778,14 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable4;
-    private javax.swing.JTextField jenisKelaminPasien;
-    private javax.swing.JTextField namaPasien;
-    private javax.swing.JTextField nomorRegistrasi;
-    private javax.swing.JTextField nomorRegistrasi1;
-    private javax.swing.JTextField nomorRegistrasi2;
+    private javax.swing.JTextField namaPasienField;
+    private javax.swing.JTextField noRegField;
     private javax.swing.JButton simpanDokter;
-    private javax.swing.JButton simpanPasienInap;
     private javax.swing.JToggleButton tambahDokter;
     private javax.swing.JToggleButton tambahPasienInap;
     private javax.swing.JToggleButton tambahRuangan;
-    private javax.swing.JButton tutupHapusDokter;
-    private javax.swing.JButton tutupHapusPasienInap;
     private javax.swing.JButton tutupTambahDokter;
-    private javax.swing.JButton tutupTambahPasienInap;
-    private javax.swing.JTextField umurPasien;
+    private javax.swing.JTextField umurPasienField;
     private javax.swing.JToggleButton viewDokter;
     private javax.swing.JToggleButton viewPasienInap;
     // End of variables declaration//GEN-END:variables

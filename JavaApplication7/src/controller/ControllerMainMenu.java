@@ -22,10 +22,10 @@ public class ControllerMainMenu implements ActionListener, KeyListener{
     MainMenu main;
     
     public ControllerMainMenu(){
+        app = new Aplikasi();
+        main = new MainMenu();
+        
     }
-
-    
-    
     @Override
     public void actionPerformed(ActionEvent e) {
     }   
