@@ -39,16 +39,16 @@ public class MainMenu extends javax.swing.JFrame {
         Panel = new javax.swing.JPanel();
         MenuUtama = new javax.swing.JPanel();
         SI = new javax.swing.JLabel();
-        tambahRuangan = new javax.swing.JToggleButton();
-        tambahDokter = new javax.swing.JToggleButton();
-        tambahPasienInap = new javax.swing.JToggleButton();
-        hapusDokter = new javax.swing.JToggleButton();
-        hapusPasien = new javax.swing.JToggleButton();
-        cariDokter = new javax.swing.JToggleButton();
-        cariPasien = new javax.swing.JToggleButton();
-        viewPasienInap = new javax.swing.JToggleButton();
-        viewDokter = new javax.swing.JToggleButton();
-        exit = new javax.swing.JToggleButton();
+        btnTambahRuanganMain = new javax.swing.JToggleButton();
+        btnTambahDokterMain = new javax.swing.JToggleButton();
+        btnTambahPasienInapMain = new javax.swing.JToggleButton();
+        btnHapusDokterMain = new javax.swing.JToggleButton();
+        btnHapusPasienMain = new javax.swing.JToggleButton();
+        btnCariDokterMain = new javax.swing.JToggleButton();
+        btnCariPasienMain = new javax.swing.JToggleButton();
+        btnViewPasienInapMain = new javax.swing.JToggleButton();
+        btnViewDokterMain = new javax.swing.JToggleButton();
+        btnExitMain = new javax.swing.JToggleButton();
         MenuHapusDokter = new javax.swing.JPanel();
         delDokter = new javax.swing.JLabel();
         NIP = new javax.swing.JLabel();
@@ -91,8 +91,8 @@ public class MainMenu extends javax.swing.JFrame {
         AlamatDokterField = new javax.swing.JTextField();
         SpesialisField = new javax.swing.JTextField();
         NIPDokterField = new javax.swing.JTextField();
-        simpanDokter = new javax.swing.JButton();
-        tutupTambahDokter = new javax.swing.JButton();
+        btnSimpanDokter = new javax.swing.JButton();
+        btnTutupTambahDokter = new javax.swing.JButton();
         MenuTambahPasienInap = new javax.swing.JPanel();
         TambahPasien = new javax.swing.JLabel();
         NamaPasien = new javax.swing.JLabel();
@@ -134,48 +134,48 @@ public class MainMenu extends javax.swing.JFrame {
         SI.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         SI.setText("Sistem Informasi Pasien Rawat Inap");
 
-        tambahRuangan.setText("Tambah Ruangan");
-        tambahRuangan.addActionListener(new java.awt.event.ActionListener() {
+        btnTambahRuanganMain.setText("Tambah Ruangan");
+        btnTambahRuanganMain.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tambahRuanganActionPerformed(evt);
+                btnTambahRuanganMainActionPerformed(evt);
             }
         });
 
-        tambahDokter.setText("Tambah Dokter");
+        btnTambahDokterMain.setText("Tambah Dokter");
 
-        tambahPasienInap.setText("Tambah Pasien Inap");
+        btnTambahPasienInapMain.setText("Tambah Pasien Inap");
 
-        hapusDokter.setText("Hapus Dokter");
-        hapusDokter.addActionListener(new java.awt.event.ActionListener() {
+        btnHapusDokterMain.setText("Hapus Dokter");
+        btnHapusDokterMain.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hapusDokterActionPerformed(evt);
+                btnHapusDokterMainActionPerformed(evt);
             }
         });
 
-        hapusPasien.setText("Hapus Pasien");
-        hapusPasien.addActionListener(new java.awt.event.ActionListener() {
+        btnHapusPasienMain.setText("Hapus Pasien");
+        btnHapusPasienMain.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hapusPasienActionPerformed(evt);
+                btnHapusPasienMainActionPerformed(evt);
             }
         });
 
-        cariDokter.setText("Cari Dokter");
+        btnCariDokterMain.setText("Cari Dokter");
 
-        cariPasien.setText("Cari Pasien");
-        cariPasien.addActionListener(new java.awt.event.ActionListener() {
+        btnCariPasienMain.setText("Cari Pasien");
+        btnCariPasienMain.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cariPasienActionPerformed(evt);
+                btnCariPasienMainActionPerformed(evt);
             }
         });
 
-        viewPasienInap.setText("Tampilkan Data Pasien Inap");
+        btnViewPasienInapMain.setText("Tampilkan Data Pasien Inap");
 
-        viewDokter.setText("Tampilkan Data Dokter");
+        btnViewDokterMain.setText("Tampilkan Data Dokter");
 
-        exit.setText("Keluar");
-        exit.addActionListener(new java.awt.event.ActionListener() {
+        btnExitMain.setText("Keluar");
+        btnExitMain.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitActionPerformed(evt);
+                btnExitMainActionPerformed(evt);
             }
         });
 
@@ -192,22 +192,22 @@ public class MainMenu extends javax.swing.JFrame {
                         .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(MenuUtamaLayout.createSequentialGroup()
                                 .addGap(75, 75, 75)
-                                .addComponent(tambahPasienInap, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(hapusPasien, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cariPasien, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(viewPasienInap, javax.swing.GroupLayout.Alignment.TRAILING))
+                                .addComponent(btnTambahPasienInapMain, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnHapusPasienMain, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCariPasienMain, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnViewPasienInapMain, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addGap(60, 60, 60)
                         .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(hapusDokter, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tambahDokter, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cariDokter, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(viewDokter, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(btnHapusDokterMain, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnTambahDokterMain, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCariDokterMain, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnViewDokterMain, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(MenuUtamaLayout.createSequentialGroup()
                         .addGap(239, 239, 239)
-                        .addComponent(exit))
+                        .addComponent(btnExitMain))
                     .addGroup(MenuUtamaLayout.createSequentialGroup()
                         .addGap(213, 213, 213)
-                        .addComponent(tambahRuangan)))
+                        .addComponent(btnTambahRuanganMain)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         MenuUtamaLayout.setVerticalGroup(
@@ -216,25 +216,25 @@ public class MainMenu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(SI, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(tambahRuangan)
+                .addComponent(btnTambahRuanganMain)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tambahPasienInap)
-                    .addComponent(tambahDokter))
+                    .addComponent(btnTambahPasienInapMain)
+                    .addComponent(btnTambahDokterMain))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hapusPasien)
-                    .addComponent(hapusDokter))
+                    .addComponent(btnHapusPasienMain)
+                    .addComponent(btnHapusDokterMain))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cariPasien)
-                    .addComponent(cariDokter))
+                    .addComponent(btnCariPasienMain)
+                    .addComponent(btnCariDokterMain))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(viewPasienInap)
-                    .addComponent(viewDokter))
+                    .addComponent(btnViewPasienInapMain)
+                    .addComponent(btnViewDokterMain))
                 .addGap(18, 18, 18)
-                .addComponent(exit)
+                .addComponent(btnExitMain)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -510,9 +510,9 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
 
-        simpanDokter.setText("Simpan");
+        btnSimpanDokter.setText("Simpan");
 
-        tutupTambahDokter.setText("Tutup");
+        btnTutupTambahDokter.setText("Tutup");
 
         javax.swing.GroupLayout MenuTambahDokterLayout = new javax.swing.GroupLayout(MenuTambahDokter);
         MenuTambahDokter.setLayout(MenuTambahDokterLayout);
@@ -557,9 +557,9 @@ public class MainMenu extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(MenuTambahDokterLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(simpanDokter)
+                .addComponent(btnSimpanDokter)
                 .addGap(72, 72, 72)
-                .addComponent(tutupTambahDokter)
+                .addComponent(btnTutupTambahDokter)
                 .addGap(165, 165, 165))
         );
         MenuTambahDokterLayout.setVerticalGroup(
@@ -593,8 +593,8 @@ public class MainMenu extends javax.swing.JFrame {
                     .addComponent(NIPDokterField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(simpanDokter)
-                    .addComponent(tutupTambahDokter))
+                    .addComponent(btnSimpanDokter)
+                    .addComponent(btnTutupTambahDokter))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
@@ -881,25 +881,25 @@ public class MainMenu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void tambahRuanganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahRuanganActionPerformed
+    private void btnTambahRuanganMainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahRuanganMainActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tambahRuanganActionPerformed
+    }//GEN-LAST:event_btnTambahRuanganMainActionPerformed
 
-    private void hapusDokterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusDokterActionPerformed
+    private void btnHapusDokterMainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusDokterMainActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hapusDokterActionPerformed
+    }//GEN-LAST:event_btnHapusDokterMainActionPerformed
 
-    private void hapusPasienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusPasienActionPerformed
+    private void btnHapusPasienMainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusPasienMainActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hapusPasienActionPerformed
+    }//GEN-LAST:event_btnHapusPasienMainActionPerformed
 
-    private void cariPasienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cariPasienActionPerformed
+    private void btnCariPasienMainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCariPasienMainActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cariPasienActionPerformed
+    }//GEN-LAST:event_btnCariPasienMainActionPerformed
 
-    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
+    private void btnExitMainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitMainActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_exitActionPerformed
+    }//GEN-LAST:event_btnExitMainActionPerformed
 
     private void btnHapusPasienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusPasienActionPerformed
         // TODO add your handling code here:
@@ -973,36 +973,116 @@ public class MainMenu extends javax.swing.JFrame {
         });
     }
 
-    public JTextField getAlamatDokter() {
+    public JLabel getAlamatDokter() {
+        return AlamatDokter;
+    }
+
+    public void setAlamatDokter(JLabel AlamatDokter) {
+        this.AlamatDokter = AlamatDokter;
+    }
+
+    public JTextField getAlamatDokterField() {
         return AlamatDokterField;
     }
 
-    public void setAlamatDokter(JTextField AlamatDokter) {
-        this.AlamatDokterField = AlamatDokter;
+    public void setAlamatDokterField(JTextField AlamatDokterField) {
+        this.AlamatDokterField = AlamatDokterField;
     }
 
-    public JTextField getBidangSpesialis() {
-        return SpesialisField;
+    public JLabel getAlamatPasien() {
+        return AlamatPasien;
     }
 
-    public void setBidangSpesialis(JTextField BidangSpesialis) {
-        this.SpesialisField = BidangSpesialis;
+    public void setAlamatPasien(JLabel AlamatPasien) {
+        this.AlamatPasien = AlamatPasien;
     }
 
-    public JButton getCariDokter() {
-        return btnCariDokter;
+    public JLabel getCariDokter() {
+        return CariDokter;
     }
 
-    public void setCariDokter(JButton CariDokter) {
-        this.btnCariDokter = CariDokter;
+    public void setCariDokter(JLabel CariDokter) {
+        this.CariDokter = CariDokter;
     }
 
-    public JTextField getJenisKelaminDokter() {
+    public JLabel getCariPasien() {
+        return CariPasien;
+    }
+
+    public void setCariPasien(JLabel CariPasien) {
+        this.CariPasien = CariPasien;
+    }
+
+    public JLabel getDaftarDokter() {
+        return DaftarDokter;
+    }
+
+    public void setDaftarDokter(JLabel DaftarDokter) {
+        this.DaftarDokter = DaftarDokter;
+    }
+
+    public JLabel getDaftarPasien() {
+        return DaftarPasien;
+    }
+
+    public void setDaftarPasien(JLabel DaftarPasien) {
+        this.DaftarPasien = DaftarPasien;
+    }
+
+    public JLabel getDiagnosa() {
+        return Diagnosa;
+    }
+
+    public void setDiagnosa(JLabel Diagnosa) {
+        this.Diagnosa = Diagnosa;
+    }
+
+    public JLabel getDokterDitemukan() {
+        return DokterDitemukan;
+    }
+
+    public void setDokterDitemukan(JLabel DokterDitemukan) {
+        this.DokterDitemukan = DokterDitemukan;
+    }
+
+    public JLabel getHapusPasien() {
+        return HapusPasien;
+    }
+
+    public void setHapusPasien(JLabel HapusPasien) {
+        this.HapusPasien = HapusPasien;
+    }
+
+    public JLabel getJKDokter() {
+        return JKDokter;
+    }
+
+    public void setJKDokter(JLabel JKDokter) {
+        this.JKDokter = JKDokter;
+    }
+
+    public JTextField getJKDokterField() {
         return JKDokterField;
     }
 
-    public void setJenisKelaminDokter(JTextField JenisKelaminDokter) {
-        this.JKDokterField = JenisKelaminDokter;
+    public void setJKDokterField(JTextField JKDokterField) {
+        this.JKDokterField = JKDokterField;
+    }
+
+    public JLabel getJKPasien() {
+        return JKPasien;
+    }
+
+    public void setJKPasien(JLabel JKPasien) {
+        this.JKPasien = JKPasien;
+    }
+
+    public JTextField getJKPasienField() {
+        return JKPasienField;
+    }
+
+    public void setJKPasienField(JTextField JKPasienField) {
+        this.JKPasienField = JKPasienField;
     }
 
     public JPanel getMenuCariDokter() {
@@ -1085,404 +1165,436 @@ public class MainMenu extends javax.swing.JFrame {
         this.MenuViewDaftarPasienInap = MenuViewDaftarPasienInap;
     }
 
-    public JTextField getNIP() {
-        return NIPField;
-    }
-
-    public void setNIP(JTextField NIP) {
-        this.NIPField = NIP;
-    }
-
-    public JTextField getNIP1() {
-        return NIPCariField;
-    }
-
-    public void setNIP1(JTextField NIP1) {
-        this.NIPCariField = NIP1;
-    }
-
-    public JTextField getNIP2() {
-        return NIPDokterField;
-    }
-
-    public void setNIP2(JTextField NIP2) {
-        this.NIPDokterField = NIP2;
-    }
-
-    public JTextField getNIP3() {
-        return NIPDokterPasienField;
-    }
-
-    public void setNIP3(JTextField NIP3) {
-        this.NIPDokterPasienField = NIP3;
-    }
-
-    public JTextField getNamaDokter() {
-        return NamaDokterField;
-    }
-
-    public void setNamaDokter(JTextField NamaDokter) {
-        this.NamaDokterField = NamaDokter;
-    }
-
-    public JTextField getNoRuangan() {
-        return NoRuanganField;
-    }
-
-    public void setNoRuangan(JTextField NoRuangan) {
-        this.NoRuanganField = NoRuangan;
-    }
-
-    public JButton getSimpanRuangan() {
-        return btnSimpanRuangan;
-    }
-
-    public void setSimpanRuangan(JButton SimpanRuangan) {
-        this.btnSimpanRuangan = SimpanRuangan;
-    }
-
-    public JButton getTutupTambahRuangan() {
-        return btnTutupTambahRuangan;
-    }
-
-    public void setTutupTambahRuangan(JButton TutupTambahRuangan) {
-        this.btnTutupTambahRuangan = TutupTambahRuangan;
-    }
-
-    public JTextField getUmurDokter() {
-        return UmurDokterField;
-    }
-
-    public void setUmurDokter(JTextField UmurDokter) {
-        this.UmurDokterField = UmurDokter;
-    }
-
-    public JTextField getAlamatPasien() {
-        return alamatPasienField;
-    }
-
-    public void setAlamatPasien(JTextField alamatPasien) {
-        this.alamatPasienField = alamatPasien;
-    }
-
-    //public JToggleButton getCariDokter() {
-    //    return cariDokter;
-    //}
-
-    public void setCariDokter(JToggleButton cariDokter) {
-        this.cariDokter = cariDokter;
-    }
-
-    public JToggleButton getCariPasien() {
-        return cariPasien;
-    }
-
-    public void setCariPasien(JToggleButton cariPasien) {
-        this.cariPasien = cariPasien;
-    }
-
-    public JButton getCariPasienInap() {
-        return btnCariPasien;
-    }
-
-    public void setCariPasienInap(JButton cariPasienInap) {
-        this.btnCariPasien = cariPasienInap;
-    }
-
-    public JTextField getDiagnosa() {
-        return diagnosaField;
-    }
-
-    public void setDiagnosa(JTextField diagnosa) {
-        this.diagnosaField = diagnosa;
-    }
-
-    public JToggleButton getExit() {
-        return exit;
-    }
-
-    public void setExit(JToggleButton exit) {
-        this.exit = exit;
-    }
-
-    public JToggleButton getHapusDokter() {
-        return hapusDokter;
-    }
-
-    public void setHapusDokter(JToggleButton hapusDokter) {
-        this.hapusDokter = hapusDokter;
-    }
-
-    public JButton getHapusDokter1() {
-        return btnHapusDokter;
-    }
-
-    public void setHapusDokter1(JButton hapusDokter1) {
-        this.btnHapusDokter = hapusDokter1;
-    }
-
-    public JToggleButton getHapusPasien() {
-        return hapusPasien;
-    }
-
-    public void setHapusPasien(JToggleButton hapusPasien) {
-        this.hapusPasien = hapusPasien;
-    }
-
-    public JButton getHapusPasienInap() {
-        return btnHapusPasien;
-    }
-
-    public void setHapusPasienInap(JButton hapusPasienInap) {
-        this.btnHapusPasien = hapusPasienInap;
-    }
-
-    public JLabel getjLabel1() {
-        return delDokter;
-    }
-
-    public void setjLabel1(JLabel jLabel1) {
-        this.delDokter = jLabel1;
-    }
-
-    public JLabel getjLabel10() {
-        return HapusPasien;
-    }
-
-    public void setjLabel10(JLabel jLabel10) {
-        this.HapusPasien = jLabel10;
-    }
-
-    public JLabel getjLabel11() {
-        return NoRegHapus;
-    }
-
-    public void setjLabel11(JLabel jLabel11) {
-        this.NoRegHapus = jLabel11;
-    }
-
-    public JLabel getjLabel12() {
-        return TambahDokter;
-    }
-
-    public void setjLabel12(JLabel jLabel12) {
-        this.TambahDokter = jLabel12;
-    }
-
-    public JLabel getjLabel13() {
-        return NamaDokter;
-    }
-
-    public void setjLabel13(JLabel jLabel13) {
-        this.NamaDokter = jLabel13;
-    }
-
-    public JLabel getjLabel14() {
-        return UmurDokter;
-    }
-
-    public void setjLabel14(JLabel jLabel14) {
-        this.UmurDokter = jLabel14;
-    }
-
-    public JLabel getjLabel15() {
-        return JKDokter;
-    }
-
-    public void setjLabel15(JLabel jLabel15) {
-        this.JKDokter = jLabel15;
-    }
-
-    public JLabel getjLabel16() {
-        return AlamatDokter;
-    }
-
-    public void setjLabel16(JLabel jLabel16) {
-        this.AlamatDokter = jLabel16;
-    }
-
-    public JLabel getjLabel17() {
-        return Spesialis;
-    }
-
-    public void setjLabel17(JLabel jLabel17) {
-        this.Spesialis = jLabel17;
-    }
-
-    public JLabel getjLabel18() {
-        return NIPDokter;
-    }
-
-    public void setjLabel18(JLabel jLabel18) {
-        this.NIPDokter = jLabel18;
-    }
-
-    public JLabel getjLabel19() {
-        return TambahPasien;
-    }
-
-    public void setjLabel19(JLabel jLabel19) {
-        this.TambahPasien = jLabel19;
-    }
-
-    public JLabel getjLabel2() {
+    public JLabel getNIP() {
         return NIP;
     }
 
-    public void setjLabel2(JLabel jLabel2) {
-        this.NIP = jLabel2;
+    public void setNIP(JLabel NIP) {
+        this.NIP = NIP;
     }
 
-    public JLabel getjLabel20() {
-        return NamaPasien;
-    }
-
-    public void setjLabel20(JLabel jLabel20) {
-        this.NamaPasien = jLabel20;
-    }
-
-    public JLabel getjLabel21() {
-        return UmurPasien;
-    }
-
-    public void setjLabel21(JLabel jLabel21) {
-        this.UmurPasien = jLabel21;
-    }
-
-    public JLabel getjLabel22() {
-        return AlamatPasien;
-    }
-
-    public void setjLabel22(JLabel jLabel22) {
-        this.AlamatPasien = jLabel22;
-    }
-
-    public JLabel getjLabel23() {
-        return JKPasien;
-    }
-
-    public void setjLabel23(JLabel jLabel23) {
-        this.JKPasien = jLabel23;
-    }
-
-    public JLabel getjLabel24() {
-        return NoReg;
-    }
-
-    public void setjLabel24(JLabel jLabel24) {
-        this.NoReg = jLabel24;
-    }
-
-    public JLabel getjLabel25() {
-        return Diagnosa;
-    }
-
-    public void setjLabel25(JLabel jLabel25) {
-        this.Diagnosa = jLabel25;
-    }
-
-    public JLabel getjLabel26() {
-        return NIPDokterPasien;
-    }
-
-    public void setjLabel26(JLabel jLabel26) {
-        this.NIPDokterPasien = jLabel26;
-    }
-
-    public JLabel getjLabel27() {
-        return TambahRuangan;
-    }
-
-    public void setjLabel27(JLabel jLabel27) {
-        this.TambahRuangan = jLabel27;
-    }
-
-    public JLabel getjLabel28() {
-        return NoRuangan;
-    }
-
-    public void setjLabel28(JLabel jLabel28) {
-        this.NoRuangan = jLabel28;
-    }
-
-    public JLabel getjLabel29() {
-        return DaftarDokter;
-    }
-
-    public void setjLabel29(JLabel jLabel29) {
-        this.DaftarDokter = jLabel29;
-    }
-
-    public JLabel getjLabel3() {
-        return CariDokter;
-    }
-
-    public void setjLabel3(JLabel jLabel3) {
-        this.CariDokter = jLabel3;
-    }
-
-    public JLabel getjLabel30() {
-        return DaftarPasien;
-    }
-
-    public void setjLabel30(JLabel jLabel30) {
-        this.DaftarPasien = jLabel30;
-    }
-
-    public JLabel getjLabel4() {
-        return SI;
-    }
-
-    public void setjLabel4(JLabel jLabel4) {
-        this.SI = jLabel4;
-    }
-
-    public JLabel getjLabel5() {
+    public JLabel getNIPCari() {
         return NIPCari;
     }
 
-    public void setjLabel5(JLabel jLabel5) {
-        this.NIPCari = jLabel5;
+    public void setNIPCari(JLabel NIPCari) {
+        this.NIPCari = NIPCari;
     }
 
-    public JLabel getjLabel6() {
-        return DokterDitemukan;
+    public JTextField getNIPCariField() {
+        return NIPCariField;
     }
 
-    public void setjLabel6(JLabel jLabel6) {
-        this.DokterDitemukan = jLabel6;
+    public void setNIPCariField(JTextField NIPCariField) {
+        this.NIPCariField = NIPCariField;
     }
 
-    public JLabel getjLabel7() {
-        return CariPasien;
+    public JLabel getNIPDokter() {
+        return NIPDokter;
     }
 
-    public void setjLabel7(JLabel jLabel7) {
-        this.CariPasien = jLabel7;
+    public void setNIPDokter(JLabel NIPDokter) {
+        this.NIPDokter = NIPDokter;
     }
 
-    public JLabel getjLabel8() {
+    public JTextField getNIPDokterField() {
+        return NIPDokterField;
+    }
+
+    public void setNIPDokterField(JTextField NIPDokterField) {
+        this.NIPDokterField = NIPDokterField;
+    }
+
+    public JLabel getNIPDokterPasien() {
+        return NIPDokterPasien;
+    }
+
+    public void setNIPDokterPasien(JLabel NIPDokterPasien) {
+        this.NIPDokterPasien = NIPDokterPasien;
+    }
+
+    public JTextField getNIPDokterPasienField() {
+        return NIPDokterPasienField;
+    }
+
+    public void setNIPDokterPasienField(JTextField NIPDokterPasienField) {
+        this.NIPDokterPasienField = NIPDokterPasienField;
+    }
+
+    public JTextField getNIPField() {
+        return NIPField;
+    }
+
+    public void setNIPField(JTextField NIPField) {
+        this.NIPField = NIPField;
+    }
+
+    public JLabel getNamaDokter() {
+        return NamaDokter;
+    }
+
+    public void setNamaDokter(JLabel NamaDokter) {
+        this.NamaDokter = NamaDokter;
+    }
+
+    public JTextField getNamaDokterField() {
+        return NamaDokterField;
+    }
+
+    public void setNamaDokterField(JTextField NamaDokterField) {
+        this.NamaDokterField = NamaDokterField;
+    }
+
+    public JLabel getNamaPasien() {
+        return NamaPasien;
+    }
+
+    public void setNamaPasien(JLabel NamaPasien) {
+        this.NamaPasien = NamaPasien;
+    }
+
+    public JLabel getNoReg() {
+        return NoReg;
+    }
+
+    public void setNoReg(JLabel NoReg) {
+        this.NoReg = NoReg;
+    }
+
+    public JLabel getNoRegCari() {
         return NoRegCari;
     }
 
-    public void setjLabel8(JLabel jLabel8) {
-        this.NoRegCari = jLabel8;
+    public void setNoRegCari(JLabel NoRegCari) {
+        this.NoRegCari = NoRegCari;
     }
 
-    public JLabel getjLabel9() {
-        return PasienDitemukan;
+    public JTextField getNoRegCariField() {
+        return NoRegCariField;
     }
 
-    public void setjLabel9(JLabel jLabel9) {
-        this.PasienDitemukan = jLabel9;
+    public void setNoRegCariField(JTextField NoRegCariField) {
+        this.NoRegCariField = NoRegCariField;
     }
 
-    public JPanel getjPanel1() {
+    public JLabel getNoRegHapus() {
+        return NoRegHapus;
+    }
+
+    public void setNoRegHapus(JLabel NoRegHapus) {
+        this.NoRegHapus = NoRegHapus;
+    }
+
+    public JTextField getNoRegHapusField() {
+        return NoRegHapusField;
+    }
+
+    public void setNoRegHapusField(JTextField NoRegHapusField) {
+        this.NoRegHapusField = NoRegHapusField;
+    }
+
+    public JLabel getNoRuangan() {
+        return NoRuangan;
+    }
+
+    public void setNoRuangan(JLabel NoRuangan) {
+        this.NoRuangan = NoRuangan;
+    }
+
+    public JTextField getNoRuanganField() {
+        return NoRuanganField;
+    }
+
+    public void setNoRuanganField(JTextField NoRuanganField) {
+        this.NoRuanganField = NoRuanganField;
+    }
+
+    public JPanel getPanel() {
         return Panel;
     }
 
-    public void setjPanel1(JPanel jPanel1) {
-        this.Panel = jPanel1;
+    public void setPanel(JPanel Panel) {
+        this.Panel = Panel;
+    }
+
+    public JLabel getPasienDitemukan() {
+        return PasienDitemukan;
+    }
+
+    public void setPasienDitemukan(JLabel PasienDitemukan) {
+        this.PasienDitemukan = PasienDitemukan;
+    }
+
+    public JLabel getSI() {
+        return SI;
+    }
+
+    public void setSI(JLabel SI) {
+        this.SI = SI;
+    }
+
+    public JLabel getSpesialis() {
+        return Spesialis;
+    }
+
+    public void setSpesialis(JLabel Spesialis) {
+        this.Spesialis = Spesialis;
+    }
+
+    public JTextField getSpesialisField() {
+        return SpesialisField;
+    }
+
+    public void setSpesialisField(JTextField SpesialisField) {
+        this.SpesialisField = SpesialisField;
+    }
+
+    public JLabel getTambahDokter() {
+        return TambahDokter;
+    }
+
+    public void setTambahDokter(JLabel TambahDokter) {
+        this.TambahDokter = TambahDokter;
+    }
+
+    public JLabel getTambahPasien() {
+        return TambahPasien;
+    }
+
+    public void setTambahPasien(JLabel TambahPasien) {
+        this.TambahPasien = TambahPasien;
+    }
+
+    public JLabel getTambahRuangan() {
+        return TambahRuangan;
+    }
+
+    public void setTambahRuangan(JLabel TambahRuangan) {
+        this.TambahRuangan = TambahRuangan;
+    }
+
+    public JLabel getUmurDokter() {
+        return UmurDokter;
+    }
+
+    public void setUmurDokter(JLabel UmurDokter) {
+        this.UmurDokter = UmurDokter;
+    }
+
+    public JTextField getUmurDokterField() {
+        return UmurDokterField;
+    }
+
+    public void setUmurDokterField(JTextField UmurDokterField) {
+        this.UmurDokterField = UmurDokterField;
+    }
+
+    public JLabel getUmurPasien() {
+        return UmurPasien;
+    }
+
+    public void setUmurPasien(JLabel UmurPasien) {
+        this.UmurPasien = UmurPasien;
+    }
+
+    public JTextField getAlamatPasienField() {
+        return alamatPasienField;
+    }
+
+    public void setAlamatPasienField(JTextField alamatPasienField) {
+        this.alamatPasienField = alamatPasienField;
+    }
+
+    public JButton getBtnCariDokter() {
+        return btnCariDokter;
+    }
+
+    public void setBtnCariDokter(JButton btnCariDokter) {
+        this.btnCariDokter = btnCariDokter;
+    }
+
+    public JToggleButton getBtnCariDokterMain() {
+        return btnCariDokterMain;
+    }
+
+    public void setBtnCariDokterMain(JToggleButton btnCariDokterMain) {
+        this.btnCariDokterMain = btnCariDokterMain;
+    }
+
+    public JButton getBtnCariPasien() {
+        return btnCariPasien;
+    }
+
+    public void setBtnCariPasien(JButton btnCariPasien) {
+        this.btnCariPasien = btnCariPasien;
+    }
+
+    public JToggleButton getBtnCariPasienMain() {
+        return btnCariPasienMain;
+    }
+
+    public void setBtnCariPasienMain(JToggleButton btnCariPasienMain) {
+        this.btnCariPasienMain = btnCariPasienMain;
+    }
+
+    public JToggleButton getBtnExitMain() {
+        return btnExitMain;
+    }
+
+    public void setBtnExitMain(JToggleButton btnExitMain) {
+        this.btnExitMain = btnExitMain;
+    }
+
+    public JButton getBtnHapusDokter() {
+        return btnHapusDokter;
+    }
+
+    public void setBtnHapusDokter(JButton btnHapusDokter) {
+        this.btnHapusDokter = btnHapusDokter;
+    }
+
+    public JToggleButton getBtnHapusDokterMain() {
+        return btnHapusDokterMain;
+    }
+
+    public void setBtnHapusDokterMain(JToggleButton btnHapusDokterMain) {
+        this.btnHapusDokterMain = btnHapusDokterMain;
+    }
+
+    public JButton getBtnHapusPasien() {
+        return btnHapusPasien;
+    }
+
+    public void setBtnHapusPasien(JButton btnHapusPasien) {
+        this.btnHapusPasien = btnHapusPasien;
+    }
+
+    public JToggleButton getBtnHapusPasienMain() {
+        return btnHapusPasienMain;
+    }
+
+    public void setBtnHapusPasienMain(JToggleButton btnHapusPasienMain) {
+        this.btnHapusPasienMain = btnHapusPasienMain;
+    }
+
+    public JButton getBtnSimpanDokter() {
+        return btnSimpanDokter;
+    }
+
+    public void setBtnSimpanDokter(JButton btnSimpanDokter) {
+        this.btnSimpanDokter = btnSimpanDokter;
+    }
+
+    public JButton getBtnSimpanPasien() {
+        return btnSimpanPasien;
+    }
+
+    public void setBtnSimpanPasien(JButton btnSimpanPasien) {
+        this.btnSimpanPasien = btnSimpanPasien;
+    }
+
+    public JButton getBtnSimpanRuangan() {
+        return btnSimpanRuangan;
+    }
+
+    public void setBtnSimpanRuangan(JButton btnSimpanRuangan) {
+        this.btnSimpanRuangan = btnSimpanRuangan;
+    }
+
+    public JToggleButton getBtnTambahDokterMain() {
+        return btnTambahDokterMain;
+    }
+
+    public void setBtnTambahDokterMain(JToggleButton btnTambahDokterMain) {
+        this.btnTambahDokterMain = btnTambahDokterMain;
+    }
+
+    public JToggleButton getBtnTambahPasienInapMain() {
+        return btnTambahPasienInapMain;
+    }
+
+    public void setBtnTambahPasienInapMain(JToggleButton btnTambahPasienInapMain) {
+        this.btnTambahPasienInapMain = btnTambahPasienInapMain;
+    }
+
+    public JToggleButton getBtnTambahRuanganMain() {
+        return btnTambahRuanganMain;
+    }
+
+    public void setBtnTambahRuanganMain(JToggleButton btnTambahRuanganMain) {
+        this.btnTambahRuanganMain = btnTambahRuanganMain;
+    }
+
+    public JButton getBtnTutupDokter() {
+        return btnTutupDokter;
+    }
+
+    public void setBtnTutupDokter(JButton btnTutupDokter) {
+        this.btnTutupDokter = btnTutupDokter;
+    }
+
+    public JButton getBtnTutupPasien() {
+        return btnTutupPasien;
+    }
+
+    public void setBtnTutupPasien(JButton btnTutupPasien) {
+        this.btnTutupPasien = btnTutupPasien;
+    }
+
+    public JButton getBtnTutupTambahDokter() {
+        return btnTutupTambahDokter;
+    }
+
+    public void setBtnTutupTambahDokter(JButton btnTutupTambahDokter) {
+        this.btnTutupTambahDokter = btnTutupTambahDokter;
+    }
+
+    public JButton getBtnTutupTambahPasien() {
+        return btnTutupTambahPasien;
+    }
+
+    public void setBtnTutupTambahPasien(JButton btnTutupTambahPasien) {
+        this.btnTutupTambahPasien = btnTutupTambahPasien;
+    }
+
+    public JButton getBtnTutupTambahRuangan() {
+        return btnTutupTambahRuangan;
+    }
+
+    public void setBtnTutupTambahRuangan(JButton btnTutupTambahRuangan) {
+        this.btnTutupTambahRuangan = btnTutupTambahRuangan;
+    }
+
+    public JToggleButton getBtnViewDokterMain() {
+        return btnViewDokterMain;
+    }
+
+    public void setBtnViewDokterMain(JToggleButton btnViewDokterMain) {
+        this.btnViewDokterMain = btnViewDokterMain;
+    }
+
+    public JToggleButton getBtnViewPasienInapMain() {
+        return btnViewPasienInapMain;
+    }
+
+    public void setBtnViewPasienInapMain(JToggleButton btnViewPasienInapMain) {
+        this.btnViewPasienInapMain = btnViewPasienInapMain;
+    }
+
+    public JLabel getDelDokter() {
+        return delDokter;
+    }
+
+    public void setDelDokter(JLabel delDokter) {
+        this.delDokter = delDokter;
+    }
+
+    public JTextField getDiagnosaField() {
+        return diagnosaField;
+    }
+
+    public void setDiagnosaField(JTextField diagnosaField) {
+        this.diagnosaField = diagnosaField;
     }
 
     public JScrollPane getjScrollPane1() {
@@ -1549,141 +1661,31 @@ public class MainMenu extends javax.swing.JFrame {
         this.jTable4 = jTable4;
     }
 
-    public JTextField getJenisKelaminPasien() {
-        return JKPasienField;
-    }
-
-    public void setJenisKelaminPasien(JTextField jenisKelaminPasien) {
-        this.JKPasienField = jenisKelaminPasien;
-    }
-
-    public JTextField getNamaPasien() {
+    public JTextField getNamaPasienField() {
         return namaPasienField;
     }
 
-    public void setNamaPasien(JTextField namaPasien) {
-        this.namaPasienField = namaPasien;
+    public void setNamaPasienField(JTextField namaPasienField) {
+        this.namaPasienField = namaPasienField;
     }
 
-    public JTextField getNomorRegistrasi() {
-        return NoRegCariField;
-    }
-
-    public void setNomorRegistrasi(JTextField nomorRegistrasi) {
-        this.NoRegCariField = nomorRegistrasi;
-    }
-
-    public JTextField getNomorRegistrasi1() {
-        return NoRegHapusField;
-    }
-
-    public void setNomorRegistrasi1(JTextField nomorRegistrasi1) {
-        this.NoRegHapusField = nomorRegistrasi1;
-    }
-
-    public JTextField getNomorRegistrasi2() {
+    public JTextField getNoRegField() {
         return noRegField;
     }
 
-    public void setNomorRegistrasi2(JTextField nomorRegistrasi2) {
-        this.noRegField = nomorRegistrasi2;
+    public void setNoRegField(JTextField noRegField) {
+        this.noRegField = noRegField;
     }
 
-    public JButton getSimpanDokter() {
-        return simpanDokter;
-    }
-
-    public void setSimpanDokter(JButton simpanDokter) {
-        this.simpanDokter = simpanDokter;
-    }
-
-    public JButton getSimpanPasienInap() {
-        return btnSimpanPasien;
-    }
-
-    public void setSimpanPasienInap(JButton simpanPasienInap) {
-        this.btnSimpanPasien = simpanPasienInap;
-    }
-
-    public JToggleButton getTambahDokter() {
-        return tambahDokter;
-    }
-
-    public void setTambahDokter(JToggleButton tambahDokter) {
-        this.tambahDokter = tambahDokter;
-    }
-
-    public JToggleButton getTambahPasienInap() {
-        return tambahPasienInap;
-    }
-
-    public void setTambahPasienInap(JToggleButton tambahPasienInap) {
-        this.tambahPasienInap = tambahPasienInap;
-    }
-
-    public JToggleButton getTambahRuangan() {
-        return tambahRuangan;
-    }
-
-    public void setTambahRuangan(JToggleButton tambahRuangan) {
-        this.tambahRuangan = tambahRuangan;
-    }
-
-    public JButton getTutupHapusDokter() {
-        return btnTutupDokter;
-    }
-
-    public void setTutupHapusDokter(JButton tutupHapusDokter) {
-        this.btnTutupDokter = tutupHapusDokter;
-    }
-
-    public JButton getTutupHapusPasienInap() {
-        return btnTutupPasien;
-    }
-
-    public void setTutupHapusPasienInap(JButton tutupHapusPasienInap) {
-        this.btnTutupPasien = tutupHapusPasienInap;
-    }
-
-    public JButton getTutupTambahDokter() {
-        return tutupTambahDokter;
-    }
-
-    public void setTutupTambahDokter(JButton tutupTambahDokter) {
-        this.tutupTambahDokter = tutupTambahDokter;
-    }
-
-    public JButton getTutupTambahPasienInap() {
-        return btnTutupTambahPasien;
-    }
-
-    public void setTutupTambahPasienInap(JButton tutupTambahPasienInap) {
-        this.btnTutupTambahPasien = tutupTambahPasienInap;
-    }
-
-    public JTextField getUmurPasien() {
+    public JTextField getUmurPasienField() {
         return umurPasienField;
     }
 
-    public void setUmurPasien(JTextField umurPasien) {
-        this.umurPasienField = umurPasien;
+    public void setUmurPasienField(JTextField umurPasienField) {
+        this.umurPasienField = umurPasienField;
     }
 
-    public JToggleButton getViewDokter() {
-        return viewDokter;
-    }
-
-    public void setViewDokter(JToggleButton viewDokter) {
-        this.viewDokter = viewDokter;
-    }
-
-    public JToggleButton getViewPasienInap() {
-        return viewPasienInap;
-    }
-
-    public void setViewPasienInap(JToggleButton viewPasienInap) {
-        this.viewPasienInap = viewPasienInap;
-    }
+    
     
     public void showMessage(String message){
         JOptionPane.showMessageDialog(null, message);
@@ -1754,22 +1756,29 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JLabel UmurPasien;
     private javax.swing.JTextField alamatPasienField;
     private javax.swing.JButton btnCariDokter;
+    private javax.swing.JToggleButton btnCariDokterMain;
     private javax.swing.JButton btnCariPasien;
+    private javax.swing.JToggleButton btnCariPasienMain;
+    private javax.swing.JToggleButton btnExitMain;
     private javax.swing.JButton btnHapusDokter;
+    private javax.swing.JToggleButton btnHapusDokterMain;
     private javax.swing.JButton btnHapusPasien;
+    private javax.swing.JToggleButton btnHapusPasienMain;
+    private javax.swing.JButton btnSimpanDokter;
     private javax.swing.JButton btnSimpanPasien;
     private javax.swing.JButton btnSimpanRuangan;
+    private javax.swing.JToggleButton btnTambahDokterMain;
+    private javax.swing.JToggleButton btnTambahPasienInapMain;
+    private javax.swing.JToggleButton btnTambahRuanganMain;
     private javax.swing.JButton btnTutupDokter;
     private javax.swing.JButton btnTutupPasien;
+    private javax.swing.JButton btnTutupTambahDokter;
     private javax.swing.JButton btnTutupTambahPasien;
     private javax.swing.JButton btnTutupTambahRuangan;
-    private javax.swing.JToggleButton cariDokter;
-    private javax.swing.JToggleButton cariPasien;
+    private javax.swing.JToggleButton btnViewDokterMain;
+    private javax.swing.JToggleButton btnViewPasienInapMain;
     private javax.swing.JLabel delDokter;
     private javax.swing.JTextField diagnosaField;
-    private javax.swing.JToggleButton exit;
-    private javax.swing.JToggleButton hapusDokter;
-    private javax.swing.JToggleButton hapusPasien;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -1780,13 +1789,6 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JTable jTable4;
     private javax.swing.JTextField namaPasienField;
     private javax.swing.JTextField noRegField;
-    private javax.swing.JButton simpanDokter;
-    private javax.swing.JToggleButton tambahDokter;
-    private javax.swing.JToggleButton tambahPasienInap;
-    private javax.swing.JToggleButton tambahRuangan;
-    private javax.swing.JButton tutupTambahDokter;
     private javax.swing.JTextField umurPasienField;
-    private javax.swing.JToggleButton viewDokter;
-    private javax.swing.JToggleButton viewPasienInap;
     // End of variables declaration//GEN-END:variables
 }

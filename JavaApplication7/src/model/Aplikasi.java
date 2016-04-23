@@ -314,7 +314,7 @@ public class Aplikasi {
                         System.out.println(" " + (i + 1) + ". \tNama Pasien : " + ruangan.get(i).getPasienInapByIndex(j).getPasien().getNama());
                         System.out.println("\tNo Registrasi : " + ruangan.get(i).getPasienInapByIndex(j).getPasien().getNoRegistrasi());
                         System.out.println("\tNama Dokter : " + ruangan.get(i).getPasienInapByIndex(j).getDokter().getNama());
-                        System.out.println("\tDiagnosa Penyakit : ");
+                        System.out.println("\tDiagnosa Penyakit : "+ruangan.get(i).getPasienInapByPasienId(nor).getDiagnosaByIndex(nipDel));
                         System.out.println("\tUmur : " + ruangan.get(i).getPasienInapByIndex(j).getPasien().getUmur());
                         System.out.println("\tJenis Kelamin : " + ruangan.get(i).getPasienInapByIndex(j).getPasien().getjenisKelamin());
                         System.out.println("\tAlamat : " + ruangan.get(i).getPasienInapByIndex(j).getPasien().getAlamat());
