@@ -30,16 +30,16 @@ public class MainMenu extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         MenuUtama = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        tambahRuangan = new javax.swing.JToggleButton();
-        tambahDokter = new javax.swing.JToggleButton();
-        tambahPasienInap = new javax.swing.JToggleButton();
-        hapusDokter = new javax.swing.JToggleButton();
-        hapusPasien = new javax.swing.JToggleButton();
-        cariDokter = new javax.swing.JToggleButton();
-        cariPasien = new javax.swing.JToggleButton();
-        viewPasienInap = new javax.swing.JToggleButton();
-        viewDokter = new javax.swing.JToggleButton();
-        exit = new javax.swing.JToggleButton();
+        tambahRuangan = new javax.swing.JButton();
+        tambahDokter = new javax.swing.JButton();
+        tambahPasienInap = new javax.swing.JButton();
+        hapusDokter = new javax.swing.JButton();
+        hapusPasien = new javax.swing.JButton();
+        cariDokter = new javax.swing.JButton();
+        cariPasien = new javax.swing.JButton();
+        viewPasienInap = new javax.swing.JButton();
+        viewDokter = new javax.swing.JButton();
+        exit = new javax.swing.JButton();
         MenuHapusDokter = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -126,49 +126,24 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel4.setText("Sistem Informasi Pasien Rawat Inap");
 
         tambahRuangan.setText("Tambah Ruangan");
-        tambahRuangan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tambahRuanganActionPerformed(evt);
-            }
-        });
 
         tambahDokter.setText("Tambah Dokter");
 
         tambahPasienInap.setText("Tambah Pasien Inap");
 
         hapusDokter.setText("Hapus Dokter");
-        hapusDokter.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hapusDokterActionPerformed(evt);
-            }
-        });
 
         hapusPasien.setText("Hapus Pasien");
-        hapusPasien.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hapusPasienActionPerformed(evt);
-            }
-        });
 
         cariDokter.setText("Cari Dokter");
 
         cariPasien.setText("Cari Pasien");
-        cariPasien.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cariPasienActionPerformed(evt);
-            }
-        });
 
         viewPasienInap.setText("Tampilkan Data Pasien Inap");
 
         viewDokter.setText("Tampilkan Data Dokter");
 
         exit.setText("Keluar");
-        exit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout MenuUtamaLayout = new javax.swing.GroupLayout(MenuUtama);
         MenuUtama.setLayout(MenuUtamaLayout);
@@ -180,25 +155,24 @@ public class MainMenu extends javax.swing.JFrame {
                         .addGap(19, 19, 19)
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(MenuUtamaLayout.createSequentialGroup()
-                        .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(MenuUtamaLayout.createSequentialGroup()
-                                .addGap(75, 75, 75)
-                                .addComponent(tambahPasienInap, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(hapusPasien, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cariPasien, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(viewPasienInap, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(60, 60, 60)
+                        .addGap(219, 219, 219)
+                        .addComponent(tambahRuangan))
+                    .addGroup(MenuUtamaLayout.createSequentialGroup()
+                        .addGap(75, 75, 75)
                         .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(hapusDokter, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tambahDokter, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cariDokter, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(viewDokter, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(tambahPasienInap, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hapusPasien, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cariPasien, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(viewPasienInap))
+                        .addGap(60, 60, 60)
+                        .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(tambahDokter, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(hapusDokter, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(cariDokter, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(viewDokter, javax.swing.GroupLayout.Alignment.LEADING)))
                     .addGroup(MenuUtamaLayout.createSequentialGroup()
-                        .addGap(239, 239, 239)
-                        .addComponent(exit))
-                    .addGroup(MenuUtamaLayout.createSequentialGroup()
-                        .addGap(213, 213, 213)
-                        .addComponent(tambahRuangan)))
+                        .addGap(235, 235, 235)
+                        .addComponent(exit)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         MenuUtamaLayout.setVerticalGroup(
@@ -210,16 +184,16 @@ public class MainMenu extends javax.swing.JFrame {
                 .addComponent(tambahRuangan)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tambahPasienInap)
-                    .addComponent(tambahDokter))
+                    .addComponent(tambahDokter)
+                    .addComponent(tambahPasienInap))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hapusPasien)
-                    .addComponent(hapusDokter))
+                    .addComponent(hapusDokter)
+                    .addComponent(hapusPasien))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cariPasien)
-                    .addComponent(cariDokter))
+                    .addComponent(cariDokter)
+                    .addComponent(cariPasien))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(viewPasienInap)
@@ -556,9 +530,9 @@ public class MainMenu extends javax.swing.JFrame {
                     .addComponent(jLabel14)
                     .addComponent(UmurDokter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15)
-                    .addComponent(JenisKelaminDokter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(JenisKelaminDokter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel15))
                 .addGap(18, 18, 18)
                 .addGroup(MenuTambahDokterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel16)
@@ -829,7 +803,7 @@ public class MainMenu extends javax.swing.JFrame {
                     .addGroup(MenuViewDaftarPasienInapLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         MenuViewDaftarPasienInapLayout.setVerticalGroup(
             MenuViewDaftarPasienInapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -838,7 +812,7 @@ public class MainMenu extends javax.swing.JFrame {
                 .addComponent(jLabel30)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(MenuViewDaftarPasienInap, "card11");
@@ -853,33 +827,13 @@ public class MainMenu extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 241, Short.MAX_VALUE)
+            .addGap(0, 403, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void tambahRuanganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahRuanganActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tambahRuanganActionPerformed
-
-    private void hapusDokterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusDokterActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hapusDokterActionPerformed
-
-    private void hapusPasienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusPasienActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hapusPasienActionPerformed
-
-    private void cariPasienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cariPasienActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cariPasienActionPerformed
-
-    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_exitActionPerformed
 
     private void hapusPasienInapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusPasienInapActionPerformed
         // TODO add your handling code here:
@@ -969,14 +923,14 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JButton TutupTambahRuangan;
     private javax.swing.JTextField UmurDokter;
     private javax.swing.JTextField alamatPasien;
-    private javax.swing.JToggleButton cariDokter;
-    private javax.swing.JToggleButton cariPasien;
+    private javax.swing.JButton cariDokter;
+    private javax.swing.JButton cariPasien;
     private javax.swing.JButton cariPasienInap;
     private javax.swing.JTextField diagnosa;
-    private javax.swing.JToggleButton exit;
-    private javax.swing.JToggleButton hapusDokter;
+    private javax.swing.JButton exit;
+    private javax.swing.JButton hapusDokter;
     private javax.swing.JButton hapusDokter1;
-    private javax.swing.JToggleButton hapusPasien;
+    private javax.swing.JButton hapusPasien;
     private javax.swing.JButton hapusPasienInap;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -1024,15 +978,15 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JTextField nomorRegistrasi2;
     private javax.swing.JButton simpanDokter;
     private javax.swing.JButton simpanPasienInap;
-    private javax.swing.JToggleButton tambahDokter;
-    private javax.swing.JToggleButton tambahPasienInap;
-    private javax.swing.JToggleButton tambahRuangan;
+    private javax.swing.JButton tambahDokter;
+    private javax.swing.JButton tambahPasienInap;
+    private javax.swing.JButton tambahRuangan;
     private javax.swing.JButton tutupHapusDokter;
     private javax.swing.JButton tutupHapusPasienInap;
     private javax.swing.JButton tutupTambahDokter;
     private javax.swing.JButton tutupTambahPasienInap;
     private javax.swing.JTextField umurPasien;
-    private javax.swing.JToggleButton viewDokter;
-    private javax.swing.JToggleButton viewPasienInap;
+    private javax.swing.JButton viewDokter;
+    private javax.swing.JButton viewPasienInap;
     // End of variables declaration//GEN-END:variables
 }
