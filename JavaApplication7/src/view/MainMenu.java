@@ -37,18 +37,6 @@ public class MainMenu extends javax.swing.JFrame {
     private void initComponents() {
 
         Panel = new javax.swing.JPanel();
-        MenuUtama = new javax.swing.JPanel();
-        SI = new javax.swing.JLabel();
-        btnTambahRuanganMain = new javax.swing.JToggleButton();
-        btnTambahDokterMain = new javax.swing.JToggleButton();
-        btnTambahPasienInapMain = new javax.swing.JToggleButton();
-        btnHapusDokterMain = new javax.swing.JToggleButton();
-        btnHapusPasienMain = new javax.swing.JToggleButton();
-        btnCariDokterMain = new javax.swing.JToggleButton();
-        btnCariPasienMain = new javax.swing.JToggleButton();
-        btnViewPasienInapMain = new javax.swing.JToggleButton();
-        btnViewDokterMain = new javax.swing.JToggleButton();
-        btnExitMain = new javax.swing.JToggleButton();
         MenuHapusDokter = new javax.swing.JPanel();
         delDokter = new javax.swing.JLabel();
         NIP = new javax.swing.JLabel();
@@ -125,120 +113,22 @@ public class MainMenu extends javax.swing.JFrame {
         DaftarPasien = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTable4 = new javax.swing.JTable();
+        MenuUtama = new javax.swing.JPanel();
+        mainMenu = new javax.swing.JLabel();
+        btntambahRuanganMain = new javax.swing.JButton();
+        btntambahDokterMain = new javax.swing.JButton();
+        btntambahPasienInapMain = new javax.swing.JButton();
+        btnhapusDokterMain = new javax.swing.JButton();
+        btnhapusPasienMain = new javax.swing.JButton();
+        btncariDokterMain = new javax.swing.JButton();
+        btncariPasienMain = new javax.swing.JButton();
+        btnviewPasienInapMain = new javax.swing.JButton();
+        btnviewDokterMain = new javax.swing.JButton();
+        btnexitMain = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Panel.setLayout(new java.awt.CardLayout());
-
-        SI.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        SI.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SI.setText("Sistem Informasi Pasien Rawat Inap");
-
-        btnTambahRuanganMain.setText("Tambah Ruangan");
-        btnTambahRuanganMain.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnTambahRuanganMainActionPerformed(evt);
-            }
-        });
-
-        btnTambahDokterMain.setText("Tambah Dokter");
-
-        btnTambahPasienInapMain.setText("Tambah Pasien Inap");
-
-        btnHapusDokterMain.setText("Hapus Dokter");
-        btnHapusDokterMain.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnHapusDokterMainActionPerformed(evt);
-            }
-        });
-
-        btnHapusPasienMain.setText("Hapus Pasien");
-        btnHapusPasienMain.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnHapusPasienMainActionPerformed(evt);
-            }
-        });
-
-        btnCariDokterMain.setText("Cari Dokter");
-
-        btnCariPasienMain.setText("Cari Pasien");
-        btnCariPasienMain.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCariPasienMainActionPerformed(evt);
-            }
-        });
-
-        btnViewPasienInapMain.setText("Tampilkan Data Pasien Inap");
-
-        btnViewDokterMain.setText("Tampilkan Data Dokter");
-
-        btnExitMain.setText("Keluar");
-        btnExitMain.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExitMainActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout MenuUtamaLayout = new javax.swing.GroupLayout(MenuUtama);
-        MenuUtama.setLayout(MenuUtamaLayout);
-        MenuUtamaLayout.setHorizontalGroup(
-            MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(MenuUtamaLayout.createSequentialGroup()
-                .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(MenuUtamaLayout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addComponent(SI, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(MenuUtamaLayout.createSequentialGroup()
-                        .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(MenuUtamaLayout.createSequentialGroup()
-                                .addGap(75, 75, 75)
-                                .addComponent(btnTambahPasienInapMain, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(btnHapusPasienMain, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnCariPasienMain, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnViewPasienInapMain, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(60, 60, 60)
-                        .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnHapusDokterMain, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnTambahDokterMain, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnCariDokterMain, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnViewDokterMain, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(MenuUtamaLayout.createSequentialGroup()
-                        .addGap(239, 239, 239)
-                        .addComponent(btnExitMain))
-                    .addGroup(MenuUtamaLayout.createSequentialGroup()
-                        .addGap(213, 213, 213)
-                        .addComponent(btnTambahRuanganMain)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        MenuUtamaLayout.setVerticalGroup(
-            MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(MenuUtamaLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(SI, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
-                .addComponent(btnTambahRuanganMain)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnTambahPasienInapMain)
-                    .addComponent(btnTambahDokterMain))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnHapusPasienMain)
-                    .addComponent(btnHapusDokterMain))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCariPasienMain)
-                    .addComponent(btnCariDokterMain))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnViewPasienInapMain)
-                    .addComponent(btnViewDokterMain))
-                .addGap(18, 18, 18)
-                .addComponent(btnExitMain)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        Panel.add(MenuUtama, "card2");
 
         delDokter.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         delDokter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -863,6 +753,90 @@ public class MainMenu extends javax.swing.JFrame {
 
         Panel.add(MenuViewDaftarPasienInap, "card11");
 
+        mainMenu.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        mainMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        mainMenu.setText("Sistem Informasi Pasien Rawat Inap");
+
+        btntambahRuanganMain.setText("Tambah Ruangan");
+
+        btntambahDokterMain.setText("Tambah Dokter");
+
+        btntambahPasienInapMain.setText("Tambah Pasien Inap");
+
+        btnhapusDokterMain.setText("Hapus Dokter");
+
+        btnhapusPasienMain.setText("Hapus Pasien");
+
+        btncariDokterMain.setText("Cari Dokter");
+
+        btncariPasienMain.setText("Cari Pasien");
+
+        btnviewPasienInapMain.setText("Tampilkan Data Pasien Inap");
+
+        btnviewDokterMain.setText("Tampilkan Data Dokter");
+
+        btnexitMain.setText("Keluar");
+
+        javax.swing.GroupLayout MenuUtamaLayout = new javax.swing.GroupLayout(MenuUtama);
+        MenuUtama.setLayout(MenuUtamaLayout);
+        MenuUtamaLayout.setHorizontalGroup(
+            MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MenuUtamaLayout.createSequentialGroup()
+                .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MenuUtamaLayout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(mainMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(MenuUtamaLayout.createSequentialGroup()
+                        .addGap(219, 219, 219)
+                        .addComponent(btntambahRuanganMain))
+                    .addGroup(MenuUtamaLayout.createSequentialGroup()
+                        .addGap(75, 75, 75)
+                        .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btntambahPasienInapMain, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnhapusPasienMain, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btncariPasienMain, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnviewPasienInapMain))
+                        .addGap(60, 60, 60)
+                        .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(btntambahDokterMain, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnhapusDokterMain, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btncariDokterMain, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnviewDokterMain, javax.swing.GroupLayout.Alignment.LEADING)))
+                    .addGroup(MenuUtamaLayout.createSequentialGroup()
+                        .addGap(235, 235, 235)
+                        .addComponent(btnexitMain)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        MenuUtamaLayout.setVerticalGroup(
+            MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MenuUtamaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(mainMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1, 1, 1)
+                .addComponent(btntambahRuanganMain)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btntambahDokterMain)
+                    .addComponent(btntambahPasienInapMain))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnhapusDokterMain)
+                    .addComponent(btnhapusPasienMain))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btncariDokterMain)
+                    .addComponent(btncariPasienMain))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(MenuUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnviewPasienInapMain)
+                    .addComponent(btnviewDokterMain))
+                .addGap(18, 18, 18)
+                .addComponent(btnexitMain)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Panel.add(MenuUtama, "card2");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -880,26 +854,6 @@ public class MainMenu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnTambahRuanganMainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahRuanganMainActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnTambahRuanganMainActionPerformed
-
-    private void btnHapusDokterMainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusDokterMainActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnHapusDokterMainActionPerformed
-
-    private void btnHapusPasienMainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusPasienMainActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnHapusPasienMainActionPerformed
-
-    private void btnCariPasienMainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCariPasienMainActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCariPasienMainActionPerformed
-
-    private void btnExitMainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitMainActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnExitMainActionPerformed
 
     private void btnHapusPasienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusPasienActionPerformed
         // TODO add your handling code here:
@@ -1325,14 +1279,6 @@ public class MainMenu extends javax.swing.JFrame {
         this.PasienDitemukan = PasienDitemukan;
     }
 
-    public JLabel getSI() {
-        return SI;
-    }
-
-    public void setSI(JLabel SI) {
-        this.SI = SI;
-    }
-
     public JLabel getSpesialis() {
         return Spesialis;
     }
@@ -1413,36 +1359,12 @@ public class MainMenu extends javax.swing.JFrame {
         this.btnCariDokter = btnCariDokter;
     }
 
-    public JToggleButton getBtnCariDokterMain() {
-        return btnCariDokterMain;
-    }
-
-    public void setBtnCariDokterMain(JToggleButton btnCariDokterMain) {
-        this.btnCariDokterMain = btnCariDokterMain;
-    }
-
     public JButton getBtnCariPasien() {
         return btnCariPasien;
     }
 
     public void setBtnCariPasien(JButton btnCariPasien) {
         this.btnCariPasien = btnCariPasien;
-    }
-
-    public JToggleButton getBtnCariPasienMain() {
-        return btnCariPasienMain;
-    }
-
-    public void setBtnCariPasienMain(JToggleButton btnCariPasienMain) {
-        this.btnCariPasienMain = btnCariPasienMain;
-    }
-
-    public JToggleButton getBtnExitMain() {
-        return btnExitMain;
-    }
-
-    public void setBtnExitMain(JToggleButton btnExitMain) {
-        this.btnExitMain = btnExitMain;
     }
 
     public JButton getBtnHapusDokter() {
@@ -1453,28 +1375,12 @@ public class MainMenu extends javax.swing.JFrame {
         this.btnHapusDokter = btnHapusDokter;
     }
 
-    public JToggleButton getBtnHapusDokterMain() {
-        return btnHapusDokterMain;
-    }
-
-    public void setBtnHapusDokterMain(JToggleButton btnHapusDokterMain) {
-        this.btnHapusDokterMain = btnHapusDokterMain;
-    }
-
     public JButton getBtnHapusPasien() {
         return btnHapusPasien;
     }
 
     public void setBtnHapusPasien(JButton btnHapusPasien) {
         this.btnHapusPasien = btnHapusPasien;
-    }
-
-    public JToggleButton getBtnHapusPasienMain() {
-        return btnHapusPasienMain;
-    }
-
-    public void setBtnHapusPasienMain(JToggleButton btnHapusPasienMain) {
-        this.btnHapusPasienMain = btnHapusPasienMain;
     }
 
     public JButton getBtnSimpanDokter() {
@@ -1499,30 +1405,6 @@ public class MainMenu extends javax.swing.JFrame {
 
     public void setBtnSimpanRuangan(JButton btnSimpanRuangan) {
         this.btnSimpanRuangan = btnSimpanRuangan;
-    }
-
-    public JToggleButton getBtnTambahDokterMain() {
-        return btnTambahDokterMain;
-    }
-
-    public void setBtnTambahDokterMain(JToggleButton btnTambahDokterMain) {
-        this.btnTambahDokterMain = btnTambahDokterMain;
-    }
-
-    public JToggleButton getBtnTambahPasienInapMain() {
-        return btnTambahPasienInapMain;
-    }
-
-    public void setBtnTambahPasienInapMain(JToggleButton btnTambahPasienInapMain) {
-        this.btnTambahPasienInapMain = btnTambahPasienInapMain;
-    }
-
-    public JToggleButton getBtnTambahRuanganMain() {
-        return btnTambahRuanganMain;
-    }
-
-    public void setBtnTambahRuanganMain(JToggleButton btnTambahRuanganMain) {
-        this.btnTambahRuanganMain = btnTambahRuanganMain;
     }
 
     public JButton getBtnTutupDokter() {
@@ -1565,20 +1447,84 @@ public class MainMenu extends javax.swing.JFrame {
         this.btnTutupTambahRuangan = btnTutupTambahRuangan;
     }
 
-    public JToggleButton getBtnViewDokterMain() {
-        return btnViewDokterMain;
+    public JButton getBtncariDokterMain() {
+        return btncariDokterMain;
     }
 
-    public void setBtnViewDokterMain(JToggleButton btnViewDokterMain) {
-        this.btnViewDokterMain = btnViewDokterMain;
+    public void setBtncariDokterMain(JButton btncariDokterMain) {
+        this.btncariDokterMain = btncariDokterMain;
     }
 
-    public JToggleButton getBtnViewPasienInapMain() {
-        return btnViewPasienInapMain;
+    public JButton getBtncariPasienMain() {
+        return btncariPasienMain;
     }
 
-    public void setBtnViewPasienInapMain(JToggleButton btnViewPasienInapMain) {
-        this.btnViewPasienInapMain = btnViewPasienInapMain;
+    public void setBtncariPasienMain(JButton btncariPasienMain) {
+        this.btncariPasienMain = btncariPasienMain;
+    }
+
+    public JButton getBtnexitMain() {
+        return btnexitMain;
+    }
+
+    public void setBtnexitMain(JButton btnexitMain) {
+        this.btnexitMain = btnexitMain;
+    }
+
+    public JButton getBtnhapusDokterMain() {
+        return btnhapusDokterMain;
+    }
+
+    public void setBtnhapusDokterMain(JButton btnhapusDokterMain) {
+        this.btnhapusDokterMain = btnhapusDokterMain;
+    }
+
+    public JButton getBtnhapusPasienMain() {
+        return btnhapusPasienMain;
+    }
+
+    public void setBtnhapusPasienMain(JButton btnhapusPasienMain) {
+        this.btnhapusPasienMain = btnhapusPasienMain;
+    }
+
+    public JButton getBtntambahDokterMain() {
+        return btntambahDokterMain;
+    }
+
+    public void setBtntambahDokterMain(JButton btntambahDokterMain) {
+        this.btntambahDokterMain = btntambahDokterMain;
+    }
+
+    public JButton getBtntambahPasienInapMain() {
+        return btntambahPasienInapMain;
+    }
+
+    public void setBtntambahPasienInapMain(JButton btntambahPasienInapMain) {
+        this.btntambahPasienInapMain = btntambahPasienInapMain;
+    }
+
+    public JButton getBtntambahRuanganMain() {
+        return btntambahRuanganMain;
+    }
+
+    public void setBtntambahRuanganMain(JButton btntambahRuanganMain) {
+        this.btntambahRuanganMain = btntambahRuanganMain;
+    }
+
+    public JButton getBtnviewDokterMain() {
+        return btnviewDokterMain;
+    }
+
+    public void setBtnviewDokterMain(JButton btnviewDokterMain) {
+        this.btnviewDokterMain = btnviewDokterMain;
+    }
+
+    public JButton getBtnviewPasienInapMain() {
+        return btnviewPasienInapMain;
+    }
+
+    public void setBtnviewPasienInapMain(JButton btnviewPasienInapMain) {
+        this.btnviewPasienInapMain = btnviewPasienInapMain;
     }
 
     public JLabel getDelDokter() {
@@ -1659,6 +1605,14 @@ public class MainMenu extends javax.swing.JFrame {
 
     public void setjTable4(JTable jTable4) {
         this.jTable4 = jTable4;
+    }
+
+    public JLabel getMainMenu() {
+        return mainMenu;
+    }
+
+    public void setMainMenu(JLabel mainMenu) {
+        this.mainMenu = mainMenu;
     }
 
     public JTextField getNamaPasienField() {
@@ -1745,7 +1699,6 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JTextField NoRuanganField;
     private javax.swing.JPanel Panel;
     private javax.swing.JLabel PasienDitemukan;
-    private javax.swing.JLabel SI;
     private javax.swing.JLabel Spesialis;
     private javax.swing.JTextField SpesialisField;
     private javax.swing.JLabel TambahDokter;
@@ -1756,27 +1709,27 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JLabel UmurPasien;
     private javax.swing.JTextField alamatPasienField;
     private javax.swing.JButton btnCariDokter;
-    private javax.swing.JToggleButton btnCariDokterMain;
     private javax.swing.JButton btnCariPasien;
-    private javax.swing.JToggleButton btnCariPasienMain;
-    private javax.swing.JToggleButton btnExitMain;
     private javax.swing.JButton btnHapusDokter;
-    private javax.swing.JToggleButton btnHapusDokterMain;
     private javax.swing.JButton btnHapusPasien;
-    private javax.swing.JToggleButton btnHapusPasienMain;
     private javax.swing.JButton btnSimpanDokter;
     private javax.swing.JButton btnSimpanPasien;
     private javax.swing.JButton btnSimpanRuangan;
-    private javax.swing.JToggleButton btnTambahDokterMain;
-    private javax.swing.JToggleButton btnTambahPasienInapMain;
-    private javax.swing.JToggleButton btnTambahRuanganMain;
     private javax.swing.JButton btnTutupDokter;
     private javax.swing.JButton btnTutupPasien;
     private javax.swing.JButton btnTutupTambahDokter;
     private javax.swing.JButton btnTutupTambahPasien;
     private javax.swing.JButton btnTutupTambahRuangan;
-    private javax.swing.JToggleButton btnViewDokterMain;
-    private javax.swing.JToggleButton btnViewPasienInapMain;
+    private javax.swing.JButton btncariDokterMain;
+    private javax.swing.JButton btncariPasienMain;
+    private javax.swing.JButton btnexitMain;
+    private javax.swing.JButton btnhapusDokterMain;
+    private javax.swing.JButton btnhapusPasienMain;
+    private javax.swing.JButton btntambahDokterMain;
+    private javax.swing.JButton btntambahPasienInapMain;
+    private javax.swing.JButton btntambahRuanganMain;
+    private javax.swing.JButton btnviewDokterMain;
+    private javax.swing.JButton btnviewPasienInapMain;
     private javax.swing.JLabel delDokter;
     private javax.swing.JTextField diagnosaField;
     private javax.swing.JScrollPane jScrollPane1;
@@ -1787,6 +1740,7 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable4;
+    private javax.swing.JLabel mainMenu;
     private javax.swing.JTextField namaPasienField;
     private javax.swing.JTextField noRegField;
     private javax.swing.JTextField umurPasienField;

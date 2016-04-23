@@ -17,6 +17,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import model.Aplikasi;
 import model.Dokter;
+import model.Pasien;
 import model.PasienInap;
 import model.Ruangan;
 import view.MainMenu;
@@ -36,27 +37,11 @@ public class ControllerMainMenu implements ActionListener, KeyListener{
         main.getBtnSimpanRuangan().addActionListener(this);
         main.getBtnSimpanPasien().addActionListener(this);
         main.getBtnSimpanDokter().addActionListener(this);
-    }
-    
-    public void addRuanganToTable(JTable table, ArrayList<Ruangan> array){
-        String[] columnRuangan = {"No Ruangan"};
-        DefaultTableModel tb = new DefaultTableModel(columnRuangan, 0){
-            @Override
-            public boolean isCellEditable(int row, int column) {
-                return false; //To change body of generated methods, choose Tools | Templates.
-            }
-        };
-        
-        for (Ruangan r : array)
-        {
-            String[] data = {r.getNoKamar()};
-            tb.addRow(data);
-        }
-        table.setModel(tb);
+        main.setVisible(true);
     }
     
     public void addDokterToTable(JTable table, ArrayList<Dokter> array){
-        String[] columnDokter = {"NAMA","UMUR","JENIS KELAMIN","ALAMAT","SPESIALIS","NIP"};
+        String[] columnDokter = {"NAMA","JENIS KELAMIN","ALAMAT","SPESIALIS","NIP"};
         DefaultTableModel tb = new DefaultTableModel(columnDokter, 0){
             @Override
             public boolean isCellEditable(int row, int column) {
@@ -66,14 +51,14 @@ public class ControllerMainMenu implements ActionListener, KeyListener{
         
         for (Dokter d : array)
         {
-            String[] data = {d.getNama(), d.getUmur(), d.getjenisKelamin(), d.getAlamat(), d.getSpesialis(), d.getNip()};
+            String[] data = {d.getNama(), d.getjenisKelamin(), d.getAlamat(), d.getSpesialis(), ""+d.getNip()};
             tb.addRow(data);
         }
         table.setModel(tb);
     }
     
     public void addPasienToTable(JTable table, ArrayList<PasienInap> array){
-        String[] columnPasien = {"NAMA","UMUR","JENIS KELAMIN","ALAMAT","NO REGISTRASI","NIP DOKTER","DIAGNOSA"};
+        String[] columnPasien = {"NAMA","JENIS KELAMIN","ALAMAT","NO REGISTRASI","NIP DOKTER","DIAGNOSA"};
         DefaultTableModel tb = new DefaultTableModel(columnPasien, 0){
             @Override
             public boolean isCellEditable(int row, int column) {
@@ -82,7 +67,7 @@ public class ControllerMainMenu implements ActionListener, KeyListener{
         };
         
         for (PasienInap p : array){
-            String[] data = {p.getPasien().getNama(), p.getPasien().getUmur(), p.getPasien().getjenisKelamin(), p.getPasien().getAlamat(), p.getPasien().getNoRegistrasi(), p.getDokter().getNama(), p.getDiagnosaByIndex(i)};
+            String[] data = {p.getPasien().getNama(), ""+p.getPasien(), p.getPasien().getjenisKelamin(), p.getPasien().getAlamat(), ""+p.getPasien().getNoRegistrasi(), p.getDokter().getNama(), p.getDiagnosa().get(0).toString()};
             tb.addRow(data);
         }
         table.setModel(tb);
@@ -97,25 +82,40 @@ public class ControllerMainMenu implements ActionListener, KeyListener{
     public void actionPerformed(ActionEvent e) {
         Object source = e.getSource();
         
-        //button simpan ruangan di klik
+        //button simpan dokter di klik
         if (source.equals(main.getBtnSimpanDokter()))
         {
-            Dokter d = new Dokter(main.getNamaDokterField().getText(), main.getUmurDokterField().getText(), main.getJKDokterField().getText(), main.getAlamatDokterField().getText(), main.getSpesialisField().getText(), main.getNIPField().getText());
-            if (app.insertDokter(d))
-            {
+            ArrayList<Dokter> d = new ArrayList<>();
+            d.add(new Dokter(main.getNamaDokterField().getText(), main.getJKDokterField().getText(), main.getAlamatDokterField().getText(), main.getSpesialisField().getText(), main.getNIPField().getText()) );
+            if (app.insertDokter(d)){
                 main.showMessage("Insert Berhasil !!");
             }
-            else
-            {
+            else{
                 main.showMessage("Insert GAGAL!", "ERROR INSERT", JOptionPane.ERROR_MESSAGE);
             }
         }
-        
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //button simpan ruangan di klik
+        if (source.equals(main.getBtnSimpanRuangan())){
+            ArrayList<Ruangan> r = new ArrayList<>();
+            r.add(new Ruangan(Integer.parseInt(main.getNoRuanganField().getText())));
+            if (app.insertRuangan(r)){
+                main.showMessage("Insert Berhasil !!");
+            }
+            else{
+                main.showMessage("Insert GAGAL!", "ERROR INSERT", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+        //button simpan pasien di klik
+        if(source.equals(main.getBtnSimpanPasien())){
+            ArrayList<PasienInap> p = new ArrayList<>();
+            p.add(new PasienInap(new Pasien(main.getNamaPasienField().getText(), main.getJKPasienField().getText(), main.getAlamatPasienField().getText(), Integer.parseInt(main.getNoRegField().getText())), new Dokter(main.getNamaDokterField().getText(), main.getJKDokterField().getText(), main.getAlamatDokterField().getText(), main.getSpesialisField().getText(), main.getNIPField().getText())));
+            if (app.insertPasien(p)){
+                main.showMessage("Insert Berhasil !!");
+            }
+            else{
+                main.showMessage("Insert GAGAL!", "ERROR INSERT", JOptionPane.ERROR_MESSAGE);
+            }
+        }
     }
 
     @Override

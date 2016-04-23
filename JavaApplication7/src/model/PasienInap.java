@@ -18,7 +18,6 @@ public class PasienInap {
     private Dokter dokter;
     private ArrayList<String> diagnosa = new ArrayList<>();
     private int nDiagnosa;
-    boolean status;
 	
     public PasienInap(Pasien p, Dokter d){
         this.pasien = p;
@@ -58,4 +57,7 @@ public class PasienInap {
 	diagnosa.remove(index);
     }
 
+    public ArrayList getDiagnosa(){
+        return diagnosa;
+    }
 }

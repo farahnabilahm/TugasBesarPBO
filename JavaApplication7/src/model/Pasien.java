@@ -13,8 +13,8 @@ public class Pasien extends Orang{
 	private String jenisPenyakit;
 	private int noReg;
         
-        public Pasien (String nama, int umur, String jenisKelamin, String alamat, int noReg){
-            super(nama, umur, jenisKelamin, alamat);
+        public Pasien (String nama, String jenisKelamin, String alamat, int noReg){
+            super(nama, jenisKelamin, alamat);
             this.noReg = noReg;
         }
 	

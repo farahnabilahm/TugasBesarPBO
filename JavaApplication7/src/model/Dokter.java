@@ -11,10 +11,10 @@ package model;
  */
 public class Dokter extends Orang{
 	private String spesialis;
-	private int nip;
+	private String nip;
         
-        public Dokter (String nama, int umur, String jenisKelamin, String alamat, String spesialis, int nip){
-            super(nama, umur, jenisKelamin, alamat);
+        public Dokter (String nama, String jenisKelamin, String alamat, String spesialis, String nip){
+            super(nama, jenisKelamin, alamat);
             this.spesialis = spesialis;
             this.nip = nip;
         }
@@ -23,7 +23,7 @@ public class Dokter extends Orang{
 		this.spesialis = spesialis;
 	}
 	
-	public void setNip(int nip){
+	public void setNip(String nip){
 		this.nip = nip;
 	}
 	
@@ -31,7 +31,7 @@ public class Dokter extends Orang{
 		return spesialis;
 	}
 	
-	public int getNip(){
+	public String getNip(){
 		return nip;
 	}
 }

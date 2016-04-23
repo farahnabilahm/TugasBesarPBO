@@ -23,21 +23,23 @@ public class Aplikasi {
     final private int maxPasien = 1000;
     private int nPasien = 0;
 
-    public void insertDokter(ArrayList<Dokter> array) {
-        File f = new File("DataDokter.txt");
+    public boolean insertDokter(ArrayList<Dokter> array) {
+        File f = new File("DataDokter.dat");
         ObjectOutputStream dos = null;
         try {
             dos = new ObjectOutputStream(new FileOutputStream(f));
             dos.writeObject(array);
             
             dos.close();
+            
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return true;
     }
 
-    public void insertRuangan(ArrayList<Ruangan> array) {
-        File f = new File("DataPasien.txt");
+    public boolean insertRuangan(ArrayList<Ruangan> array) {
+        File f = new File("DataRuangan.dat");
         ObjectOutputStream dos = null;
         try {
             dos = new ObjectOutputStream(new FileOutputStream(f));
@@ -47,10 +49,25 @@ public class Aplikasi {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return true;
+    }
+    
+    public boolean insertPasien(ArrayList<PasienInap> array){
+        File f = new File("DataPasienInap.dat");
+        ObjectOutputStream dos = null;
+        try {
+            dos = new ObjectOutputStream(new FileOutputStream(f));
+            dos.writeObject(array);
+            
+            dos.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return true;
     }
     
     public ArrayList<Dokter> getDokter() {
-        File f = new File("DataDokter.txt");
+        File f = new File("DataDokter.dat");
         try {
             ObjectInputStream ois = new ObjectInputStream(new FileInputStream(f));
             ArrayList<Dokter> arrDok = (ArrayList<Dokter>) ois.readObject();
@@ -67,7 +84,7 @@ public class Aplikasi {
     }
     
     public ArrayList<Ruangan> getRuangan() {
-        File f = new File("DataPasien.txt");
+        File f = new File("DataRuangan.dat");
         try {
             ObjectInputStream ois = new ObjectInputStream(new FileInputStream(f));
             ArrayList<Ruangan> arrRuangan = (ArrayList<Ruangan>) ois.readObject();
@@ -83,6 +100,23 @@ public class Aplikasi {
         return null;
     }
 
+    public ArrayList<PasienInap> getPasienInap(){
+        File f = new File("DataPasien.dat");
+        try {
+            ObjectInputStream ois = new ObjectInputStream(new FileInputStream(f));
+            ArrayList<PasienInap> arrPasien = (ArrayList<PasienInap>) ois.readObject();
+            
+            ois.close();
+            return arrPasien;
+
+        } catch (EOFException ex) {
+            return new ArrayList<>();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return null;
+    }
+    
     public void addDokter(Dokter d) {
         if (nDokter < maxDokter) {
             dokter.add(d);
@@ -140,7 +174,7 @@ public class Aplikasi {
         return dokter.get(nip);
     }
 
-    public void deleteDokter(int nip) {
+    public void deleteDokter(String nip) {
         dokter = getDokter();
         boolean found = false;
         for (int i = 0; i < nDokter; i++) {
@@ -154,7 +188,7 @@ public class Aplikasi {
         }
     }
 
-    public Dokter searchDokter(int nip) {
+    public Dokter searchDokter(String nip) {
         dokter = getDokter();
         Dokter t = null;
         for (Dokter x : dokter) {
@@ -211,8 +245,6 @@ public class Aplikasi {
                 System.out.println("Menambahkan Dokter");
                 System.out.println(" Nama : ");
                 String namad = s.next();
-                System.out.println(" Umur : ");
-                int umurd = s.nextInt();
                 System.out.println(" Jenis Kelamin : ");
                 String jkd = s.next();
                 System.out.println(" Alamat : ");
@@ -220,8 +252,8 @@ public class Aplikasi {
                 System.out.println(" Bidang Spesialis : ");
                 String spesialisd = s.next();
                 System.out.println(" NIP : ");
-                int nipd = s.nextInt();
-                Dokter d = new Dokter(namad, umurd, jkd, alamatd, spesialisd, nipd);
+                String nipd = s.next();
+                Dokter d = new Dokter(namad, jkd, alamatd, spesialisd, nipd);
                 addDokter(d);
                 mainMenu();
                 break;
@@ -234,18 +266,15 @@ public class Aplikasi {
                 if (r != null)
                 {
                     String nama = null;
-                    int umur = 0;
                     String alamat = null;
                     String jk = null;
                     int noReg = 0;
                     String jp = null;
                     String di = null;
-                    int nip = 0;
+                    String nip = null;
                     System.out.println("Menambahkan Pasien Inap");
                     System.out.println(" Nama : ");
                     nama = s.next();
-                    System.out.println(" Umur : ");
-                    umur = s.nextInt();
                     System.out.println(" Alamat : ");
                     alamat = s.next();
                     System.out.println(" Jenis Kelamin : ");
@@ -253,11 +282,11 @@ public class Aplikasi {
                     System.out.println(" No Registrasi : ");
                     noReg = s.nextInt();
                     System.out.println(" NIP Dokter pasien : ");
-                    nip = s.nextInt();
+                    nip = s.next();
                     System.out.println(" Diagnosa Penyakit : ");
                     di = s.next();
                     Dokter dok = searchDokter(nip);
-                    r.tambahPasienInap(new Pasien(nama, umur, jk, alamat, noReg), dok, di);
+                    r.tambahPasienInap(new Pasien(nama, jk, alamat, noReg), dok, di);
                     
                 }else {
                     System.out.println("Ruangan tidak ditemukan !!");
@@ -266,7 +295,7 @@ public class Aplikasi {
                 break;
             case 3:
                 System.out.println("Masukkan NIP Dokter : ");
-                int nipDel = s.nextInt();
+                String nipDel = s.next();
                 deleteDokter(nipDel);
                 mainMenu();
                 break;
@@ -278,7 +307,7 @@ public class Aplikasi {
                 break;
             case 5:
                 System.out.println("Masukkan NIP Dokter : ");
-                int nipSrch = s.nextInt();
+                String nipSrch = s.next();
                 Dokter q = null;
                 q = searchDokter(nipSrch);
                 System.out.println("Nama Dokter : " + q.getNama());
@@ -301,7 +330,6 @@ public class Aplikasi {
                     System.out.println("\tNIP : " + dokter.get(i).getNip());
                     System.out.println("\tSpesialis : " + dokter.get(i).getSpesialis());
                     System.out.println("\tAlamat : " + dokter.get(i).getAlamat());
-                    System.out.println("\tUmur : " + dokter.get(i).getUmur());
                     System.out.println("\tJenis Kelamin : " + dokter.get(i).getjenisKelamin());
                 }
                 mainMenu();
@@ -314,8 +342,7 @@ public class Aplikasi {
                         System.out.println(" " + (i + 1) + ". \tNama Pasien : " + ruangan.get(i).getPasienInapByIndex(j).getPasien().getNama());
                         System.out.println("\tNo Registrasi : " + ruangan.get(i).getPasienInapByIndex(j).getPasien().getNoRegistrasi());
                         System.out.println("\tNama Dokter : " + ruangan.get(i).getPasienInapByIndex(j).getDokter().getNama());
-                        System.out.println("\tDiagnosa Penyakit : "+ruangan.get(i).getPasienInapByPasienId(nor).getDiagnosaByIndex(nipDel));
-                        System.out.println("\tUmur : " + ruangan.get(i).getPasienInapByIndex(j).getPasien().getUmur());
+                        System.out.println("\tDiagnosa Penyakit : "+ruangan.get(i).getPasienInapByIndex(j).getDiagnosa());
                         System.out.println("\tJenis Kelamin : " + ruangan.get(i).getPasienInapByIndex(j).getPasien().getjenisKelamin());
                         System.out.println("\tAlamat : " + ruangan.get(i).getPasienInapByIndex(j).getPasien().getAlamat());
                     }
@@ -326,4 +353,5 @@ public class Aplikasi {
                 System.out.println("Pilihan yang Dimasukkan Salah");
         }
     }
+
 }

@@ -13,7 +13,6 @@ import java.util.ArrayList;
 public class Ruangan {
 private ArrayList<PasienInap> pasienInap = new ArrayList<>();
 private int noKamar;
-private boolean status;
 	
     public Ruangan(int noKamar){
         this.noKamar = noKamar;

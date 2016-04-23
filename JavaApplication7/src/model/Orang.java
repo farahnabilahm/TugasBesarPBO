@@ -11,23 +11,17 @@ package model;
  */
 public abstract class Orang {
 	private String nama;
-	private int umur;
 	private String jenisKelamin;
         private String alamat;
 	
-	public Orang(String nama, int umur, String jenisKelamin, String alamat){
+	public Orang(String nama, String jenisKelamin, String alamat){
 		this.nama = nama;
-		this.umur = umur;
 		this.jenisKelamin = jenisKelamin;
                 this.alamat = alamat;
 	}
 	
 	public String getNama(){
 		return nama;
-	}
-	
-	public int getUmur(){
-		return umur;
 	}
 	
 	public String getAlamat() {
@@ -40,10 +34,6 @@ public abstract class Orang {
 	
 	public void setNama(String nama){
 		this.nama = nama;
-	}
-	
-	public void setUmur(int umur){
-		this.umur = umur;
 	}
 	
 	public void setjenisKelamin(String jenisKelamin){
