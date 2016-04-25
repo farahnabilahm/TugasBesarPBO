@@ -5,11 +5,13 @@
  */
 package model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Dell Inspiron 14
  */
-public class Dokter extends Orang{
+public class Dokter extends Orang implements Serializable{
 	private String spesialis;
 	private String nip;
         

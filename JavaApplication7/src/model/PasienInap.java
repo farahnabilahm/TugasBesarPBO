@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author aldebaranbn
  */
-public class PasienInap {
+public class PasienInap implements Serializable{
     private Pasien pasien;
     private Dokter dokter;
     private ArrayList<String> diagnosa = new ArrayList<>();

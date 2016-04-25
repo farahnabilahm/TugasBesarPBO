@@ -51,29 +51,15 @@ public class Aplikasi {
         }
         return true;
     }
-    
-    public boolean insertPasien(ArrayList<PasienInap> array){
-        File f = new File("DataPasienInap.dat");
-        ObjectOutputStream dos = null;
-        try {
-            dos = new ObjectOutputStream(new FileOutputStream(f));
-            dos.writeObject(array);
-            
-            dos.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return true;
-    }
-    
+        
     public ArrayList<Dokter> getDokter() {
         File f = new File("DataDokter.dat");
         try {
             ObjectInputStream ois = new ObjectInputStream(new FileInputStream(f));
-            ArrayList<Dokter> arrDok = (ArrayList<Dokter>) ois.readObject();
+            Object arrDok = ois.readObject();
             
             ois.close();
-            return arrDok;
+            return (ArrayList<Dokter>) arrDok;
 
         } catch (EOFException ex) {
             return new ArrayList<>();
@@ -99,23 +85,6 @@ public class Aplikasi {
         }
         return null;
     }
-
-    public ArrayList<PasienInap> getPasienInap(){
-        File f = new File("DataPasien.dat");
-        try {
-            ObjectInputStream ois = new ObjectInputStream(new FileInputStream(f));
-            ArrayList<PasienInap> arrPasien = (ArrayList<PasienInap>) ois.readObject();
-            
-            ois.close();
-            return arrPasien;
-
-        } catch (EOFException ex) {
-            return new ArrayList<>();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-        return null;
-    }
     
     public void addDokter(Dokter d) {
         if (nDokter < maxDokter) {
@@ -127,20 +96,26 @@ public class Aplikasi {
         }
     }
 
-    public void addPasien(PasienInap p) {
-        if (nPasien < maxPasien) {
-            ruangan.get(nPasien).getPasienInap().add(p);
-            nPasien++;
-            insertRuangan(ruangan);
-        } else {
-            System.out.println("Pasien sudah penuh");
-        }
-    }
+    //parameter di sesuaikan
+//    public void addPasien(int noKmar) {
+//        if (nPasien < maxPasien) {
+//            //ambil ruangan dulu
+//            Ruangan r = getRuanganByNoKamar(noKmar);
+//            r.tambahPasienInap(p, d, diag);
+//            nPasien++;
+//            insertRuangan(ruangan);
+//        } else {
+//            System.out.println("Pasien sudah penuh");
+//        }
+//    }
 
-    public PasienInap getPasien(int noReg) {
-        ruangan = getRuangan();
-        return ruangan.get(nPasien).getPasienInap().get(noReg);
-    }
+    //salah parameter
+    //noreg tu bukan indeks
+//    public PasienInap getPasien(int noReg) {
+//        ruangan = getRuangan();
+//        //npasien tu bukan indeks yg di inginkan
+//        return ruangan.get(0).getPasienInap().get(0);
+//    }
 
     public void deletePasien(int noReg) {
         ruangan = getRuangan();
@@ -159,12 +134,19 @@ public class Aplikasi {
         }
     }
 
+    //ini udah ada, knp buat lagi ?
     public PasienInap searchPasien(int noReg) {
         ruangan = getRuangan();
         Ruangan a = null;
         for (Ruangan x : ruangan) {
-            if (x.getPasienInapByPasienId(noReg).equals(noReg));
-            a = x;
+            for (int i=0 ; i<x.getPasienInap().size();i++){
+                //yang pake equals tu cuma String
+                if (x.getPasienInap().get(i).getPasien().getNoRegistrasi() == noReg)
+                {
+                    a = x;
+                    break;
+                }
+            }
         }
         return a.getPasienInapByPasienId(noReg);
     }
@@ -178,7 +160,7 @@ public class Aplikasi {
         dokter = getDokter();
         boolean found = false;
         for (int i = 0; i < nDokter; i++) {
-            if (dokter.get(i).getNip() == nip) {
+            if (dokter.get(i).getNip().equals(nip)) {
                 found = true;
                 dokter.remove(i);
                 insertDokter(dokter);
@@ -192,7 +174,7 @@ public class Aplikasi {
         dokter = getDokter();
         Dokter t = null;
         for (Dokter x : dokter) {
-            if (x.getNip() == nip) {
+            if (x.getNip().equals(nip)) {
                 t = x;
             }
         }
@@ -259,6 +241,7 @@ public class Aplikasi {
                 break;
             case 2:
 
+                //menu kedua blm manggil insert k file. 
                 System.out.println("Masukkan nomor kamar : ");
                 int no = s.nextInt();
                 
@@ -286,7 +269,14 @@ public class Aplikasi {
                     System.out.println(" Diagnosa Penyakit : ");
                     di = s.next();
                     Dokter dok = searchDokter(nip);
-                    r.tambahPasienInap(new Pasien(nama, jk, alamat, noReg), dok, di);
+                    if (dok !=null)
+                    {
+                        r.tambahPasienInap(new Pasien(nama, jk, alamat, noReg), dok, di);
+                        //tadi method2 yang aku hapus, udah ada. jadi ga perlu buat. 
+                        insertRuangan(ruangan);
+                    }
+                    else
+                        System.out.println("Dokter tidak ada !!");
                     
                 }else {
                     System.out.println("Ruangan tidak ditemukan !!");

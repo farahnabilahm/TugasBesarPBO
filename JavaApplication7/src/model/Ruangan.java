@@ -9,8 +9,9 @@ package model;
  *
  * @author aldebaranbn
  */
+import java.io.Serializable;
 import java.util.ArrayList;
-public class Ruangan {
+public class Ruangan implements Serializable{
 private ArrayList<PasienInap> pasienInap = new ArrayList<>();
 private int noKamar;
 	
@@ -26,6 +27,7 @@ private int noKamar;
         return pasienInap;
     }
     
+    //pake ini, kan hubungannya komposisi
     public void tambahPasienInap(Pasien p, Dokter d, String diag){
         PasienInap pa = new PasienInap(p, d);
         pa.addDiagnosa(diag);
@@ -45,7 +47,7 @@ private int noKamar;
         }
         return null;
     }
-    
+        
     public void removePasienInap(int i){
         pasienInap.remove(i);
     }

@@ -106,7 +106,7 @@ public class ControllerMainMenu implements ActionListener, KeyListener{
             }
         }
         //button simpan pasien di klik
-        if(source.equals(main.getBtnSimpanPasien())){
+        /*if(source.equals(main.getBtnSimpanPasien())){
             ArrayList<PasienInap> p = new ArrayList<>();
             p.add(new PasienInap(new Pasien(main.getNamaPasienField().getText(), main.getJKPasienField().getText(), main.getAlamatPasienField().getText(), Integer.parseInt(main.getNoRegField().getText())), new Dokter(main.getNamaDokterField().getText(), main.getJKDokterField().getText(), main.getAlamatDokterField().getText(), main.getSpesialisField().getText(), main.getNIPField().getText())));
             if (app.insertPasien(p)){
@@ -115,7 +115,7 @@ public class ControllerMainMenu implements ActionListener, KeyListener{
             else{
                 main.showMessage("Insert GAGAL!", "ERROR INSERT", JOptionPane.ERROR_MESSAGE);
             }
-        }
+        }*/
     }
 
     @Override
