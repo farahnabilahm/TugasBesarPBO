@@ -10,7 +10,6 @@ package model;
  * @author Dell Inspiron 14
  */
 public class Pasien extends Orang{
-	private String jenisPenyakit;
 	private int noReg;
         
         public Pasien (String nama, String jenisKelamin, String alamat, int noReg){

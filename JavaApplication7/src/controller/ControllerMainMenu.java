@@ -105,17 +105,6 @@ public class ControllerMainMenu implements ActionListener, KeyListener{
                 main.showMessage("Insert GAGAL!", "ERROR INSERT", JOptionPane.ERROR_MESSAGE);
             }
         }
-        //button simpan pasien di klik
-        /*if(source.equals(main.getBtnSimpanPasien())){
-            ArrayList<PasienInap> p = new ArrayList<>();
-            p.add(new PasienInap(new Pasien(main.getNamaPasienField().getText(), main.getJKPasienField().getText(), main.getAlamatPasienField().getText(), Integer.parseInt(main.getNoRegField().getText())), new Dokter(main.getNamaDokterField().getText(), main.getJKDokterField().getText(), main.getAlamatDokterField().getText(), main.getSpesialisField().getText(), main.getNIPField().getText())));
-            if (app.insertPasien(p)){
-                main.showMessage("Insert Berhasil !!");
-            }
-            else{
-                main.showMessage("Insert GAGAL!", "ERROR INSERT", JOptionPane.ERROR_MESSAGE);
-            }
-        }*/
     }
 
     @Override

@@ -29,9 +29,7 @@ public class Aplikasi {
         try {
             dos = new ObjectOutputStream(new FileOutputStream(f));
             dos.writeObject(array);
-            
             dos.close();
-            
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -44,7 +42,6 @@ public class Aplikasi {
         try {
             dos = new ObjectOutputStream(new FileOutputStream(f));
             dos.writeObject(array);
-            
             dos.close();
         } catch (Exception e) {
             e.printStackTrace();
@@ -57,10 +54,8 @@ public class Aplikasi {
         try {
             ObjectInputStream ois = new ObjectInputStream(new FileInputStream(f));
             Object arrDok = ois.readObject();
-            
             ois.close();
             return (ArrayList<Dokter>) arrDok;
-
         } catch (EOFException ex) {
             return new ArrayList<>();
         } catch (Exception ex) {
@@ -74,10 +69,8 @@ public class Aplikasi {
         try {
             ObjectInputStream ois = new ObjectInputStream(new FileInputStream(f));
             ArrayList<Ruangan> arrRuangan = (ArrayList<Ruangan>) ois.readObject();
-            
             ois.close();
             return arrRuangan;
-
         } catch (EOFException ex) {
             return new ArrayList<>();
         } catch (Exception ex) {
@@ -96,27 +89,6 @@ public class Aplikasi {
         }
     }
 
-    //parameter di sesuaikan
-//    public void addPasien(int noKmar) {
-//        if (nPasien < maxPasien) {
-//            //ambil ruangan dulu
-//            Ruangan r = getRuanganByNoKamar(noKmar);
-//            r.tambahPasienInap(p, d, diag);
-//            nPasien++;
-//            insertRuangan(ruangan);
-//        } else {
-//            System.out.println("Pasien sudah penuh");
-//        }
-//    }
-
-    //salah parameter
-    //noreg tu bukan indeks
-//    public PasienInap getPasien(int noReg) {
-//        ruangan = getRuangan();
-//        //npasien tu bukan indeks yg di inginkan
-//        return ruangan.get(0).getPasienInap().get(0);
-//    }
-
     public void deletePasien(int noReg) {
         ruangan = getRuangan();
         boolean found = false;
@@ -134,15 +106,12 @@ public class Aplikasi {
         }
     }
 
-    //ini udah ada, knp buat lagi ?
     public PasienInap searchPasien(int noReg) {
         ruangan = getRuangan();
         Ruangan a = null;
         for (Ruangan x : ruangan) {
             for (int i=0 ; i<x.getPasienInap().size();i++){
-                //yang pake equals tu cuma String
-                if (x.getPasienInap().get(i).getPasien().getNoRegistrasi() == noReg)
-                {
+                if (x.getPasienInap().get(i).getPasien().getNoRegistrasi() == noReg){
                     a = x;
                     break;
                 }
@@ -240,14 +209,10 @@ public class Aplikasi {
                 mainMenu();
                 break;
             case 2:
-
-                //menu kedua blm manggil insert k file. 
                 System.out.println("Masukkan nomor kamar : ");
-                int no = s.nextInt();
-                
+                int no = s.nextInt();                
                 Ruangan r = getRuanganByNoKamar(no);
-                if (r != null)
-                {
+                if (r != null){
                     String nama = null;
                     String alamat = null;
                     String jk = null;
@@ -272,7 +237,6 @@ public class Aplikasi {
                     if (dok !=null)
                     {
                         r.tambahPasienInap(new Pasien(nama, jk, alamat, noReg), dok, di);
-                        //tadi method2 yang aku hapus, udah ada. jadi ga perlu buat. 
                         insertRuangan(ruangan);
                     }
                     else

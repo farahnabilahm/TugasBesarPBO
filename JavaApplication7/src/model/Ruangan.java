@@ -27,12 +27,10 @@ private int noKamar;
         return pasienInap;
     }
     
-    //pake ini, kan hubungannya komposisi
     public void tambahPasienInap(Pasien p, Dokter d, String diag){
-        PasienInap pa = new PasienInap(p, d);
-        pa.addDiagnosa(diag);
-        pasienInap.add(pa);
-        
+        PasienInap pi = new PasienInap(p, d);
+        pi.addDiagnosa(diag);
+        pasienInap.add(pi);    
     }
     
     public PasienInap getPasienInapByIndex(int index){

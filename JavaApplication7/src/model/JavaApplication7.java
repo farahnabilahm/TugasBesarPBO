@@ -5,6 +5,8 @@
  */
 package model;
 
+import view.MainMenu;
+
 /**
  *
  * @author Dell Inspiron 14
@@ -18,5 +20,7 @@ public class JavaApplication7 {
         // TODO code application logic here
         Aplikasi a = new Aplikasi(); 
         a.mainMenu();
+        
+        
     }
 }
